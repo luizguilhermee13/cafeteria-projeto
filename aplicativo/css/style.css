@@ -1,0 +1,767 @@
+/* Formatações Padrões para todas telas*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-image: url(../image/texturam.jpeg);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body button,
+footer button {
+  background-color: rgba(0, 0, 0, 0.849);
+  color: rgba(255, 255, 255, 0.849);
+}
+
+input {
+  color: #000000;
+}
+/* Header, Main e Footer */
+header,
+main,
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Header - formatação do tamanho*/
+header {
+  background-color: #50772dda;
+  padding: 2%;
+  flex-direction: column;
+  gap: 95px;
+  font: normal 40px/1.2 "Verdana", sans-serif;
+  color: rgba(240, 248, 255, 0.863);
+}
+
+/* Header - formatação textos*/
+header #ph2 {
+  color: rgba(222, 223, 216, 0.945);
+  text-decoration: none;
+  font-size: larger;
+  text-shadow: 2px 2px 3px rgba(234, 250, 13, 0.575);
+}
+
+header #ph2:hover {
+  color: rgba(235, 57, 13, 0.945);
+  text-shadow: 2px 2px 3px rgba(8, 7, 8, 0.575);
+}
+
+header img {
+  margin: 1% auto;
+  height: 9em;
+  width: 90%;
+  border: solid rgba(231, 51, 51, 0.795) 2px;
+}
+
+/* Main */
+main {
+  flex: 1;
+  width: 95%;
+  margin: 0.5% auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #50772dda;
+}
+
+main h1 {
+  font: normal 80px/1.2 "Verdana", sans-serif;
+  color: aliceblue;
+  text-shadow: 3px 3px #0a0a0a;
+}
+
+main h2 {
+  font: normal 5px "Verdana", sans-serif;
+  color: aliceblue;
+  text-shadow: 1px 1px #0a0a0a;
+}
+
+/* Main - formatação do container e cards */
+
+main .container {
+  width: 95%;
+  margin: 2% auto;
+  font: normal 40px/1.2 "Verdana", sans-serif;
+  padding: 0.5%;
+}
+
+main .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #432818d3;
+  color: antiquewhite;
+  padding: 1%;
+  width: 100%;
+  min-height: 500px;
+  text-decoration: none;
+  margin: auto;
+}
+
+.card-header {
+  display: flex;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-body {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.card-footer {
+  width: 100%;
+}
+
+.container .card-footer a {
+  color: antiquewhite;
+}
+
+.container .card-footer a:hover {
+  color: rgb(67, 204, 33);
+  text-shadow: #0f0f0f 2px 2px;
+}
+
+/* tela inicial footer */
+.card-footer table {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+}
+
+.card-footer tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card-footer td {
+  width: 50%;
+}
+
+.card-footer a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.card-footer td#diferentao {
+  border: solid 1px black;
+  text-align: center;
+}
+
+/* tela de login e cadastro ajustes dos formularios */
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2% auto;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.form-group label {
+  flex: 1;
+  margin: 0;
+}
+
+/* O input ocupará o restante do espaço disponível */
+.form-group input {
+  flex: 2;
+  padding: 0.5em;
+  font-size: 0.5em;
+  color: #000000;
+}
+
+.formulariologin {
+  display: flex;
+  border: solid black 1px;
+  flex-direction: column;
+}
+
+/* tela login  Footer - botao voltar*/
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding: 0;
+  margin: auto;
+}
+
+/* posicionamento do footer do card ou seja, esqueceu senha, botao entrar e botao cadastrar*/
+.formulariologin #logar {
+  margin: auto;
+  padding: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* formatação do footer do card ou seja, esqueceu senha, botao entrar e botao entrar*/
+.form-group button#btnEntrar {
+  width: 160px;
+  min-height: 50px;
+  padding: 8px 10px;
+  font-size: 0.5em;
+  margin: 10px;
+}
+
+/* Ajustes para  "Esqueceu senha" */
+.form-group a#linkEsqueceuSenha {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #0a0a0a;
+}
+
+/* Posicionamento do botão Cadastrar apenas na página de cadastro */
+main.cadastro .formulariologin #cadastrar {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  text-align: center;
+}
+
+main.cadastro .formulariologin button#cadastrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-width: 150px;
+  min-height: 50px;
+  padding: 8px 20px;
+  font-size: 0.5em;
+  margin: 10px;
+  color: black;
+}
+
+/* tela opção de login*/
+.logarcadastro .container .card {
+  background-color: #50772dda;
+}
+.card form {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  background-color: #432818d3;
+}
+
+.card .agruparregistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: solid #432818d3 4px;
+  margin: auto;
+}
+
+.card .agruparregistro button {
+  text-decoration: none;
+
+  width: 50%;
+  height: 90px;
+  border: solid rgba(0, 0, 0, 0.795) 2px;
+  margin: 1% auto;
+}
+
+.card .agruparregistro a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.card form#registro input {
+  width: 90%;
+  height: 4em;
+  margin: 0.7% auto;
+  color: black;
+}
+
+.card form#registro #btncadastro {
+  display: flex;
+  flex-direction: row;
+
+  width: 15%;
+  height: 3em;
+  margin: auto;
+}
+
+/* tela opção de login -Footer botao voltar*/
+.voltando .container {
+  margin-bottom: 2%;
+}
+.voltando .container .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.voltando .container .card input {
+  width: 16%;
+  height: 2em;
+  max-height: 4em;
+  background-color: #5fc71aa9;
+  font-size: 60px;
+  border: #86691888 solid 1px;
+}
+
+.voltando .container .card input:hover {
+  background-color: #b4841bf3;
+  box-shadow: #0f0f0f 3px 2px 2px 1px;
+}
+.card td {
+  padding: 0 10px;
+}
+
+.card td img {
+  width: 100%;
+  max-height: 240px;
+  box-sizing: border-box;
+}
+
+footer .container table {
+  margin: 15px auto;
+  padding: 15px;
+  border: solid black 1px;
+  box-sizing: border-box;
+  color: antiquewhite;
+  background-color: #432818d3;
+}
+
+/* cardapio */
+main h2 {
+  margin: 1% auto -1% auto;
+}
+
+main .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu .container {
+  border: solid black 1px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2% 0%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+main.menu .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid #5a9427a4 4px;
+  margin: 1% auto;
+  padding: 1%;
+  width: 27%;
+  height: auto;
+  box-sizing: border-box;
+  font-size: 70px;
+  background-color: #432818d3;
+}
+
+.menu .container .card .card-header {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 60%;
+}
+
+.menu h2 {
+  font-size: 50px;
+}
+
+.menu .container .card .card-header img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.menu .container .card .card-body h2 {
+  box-sizing: border-box;
+  font-size: 50px;
+}
+
+.menu .card .card-footer {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu .container .card .card-footer span {
+  box-sizing: border-box;
+  font-size: 40px;
+  color: antiquewhite;
+}
+
+.menu .card .card-footer button {
+  font-size: 35px;
+  height: 45px;
+  width: 17%;
+}
+
+.menu .card .card-footer button:hover {
+  background-color: #4dc20a96;
+}
+
+/* cardapio botao voltar*/
+.menu .auxbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  max-height: 150px;
+  margin: 0.5% auto;
+  padding: 0% 1% 7% 0;
+}
+.menu .auxbutton input {
+  width: 100%;
+  height: 1.5em;
+  max-height: 4em;
+  background-color: #5fc71aa9;
+  font-size: 70px;
+  border: #86691888 solid 1px;
+}
+
+/* cardapio - carrinho */
+.cardapio footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 90px;
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.cardapio footer button {
+  text-decoration: none;
+  color: aliceblue;
+  font: 50px arial bolder;
+  background-color: #432818d3;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 90px;
+}
+
+.cardapio footer button {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+.cardapio footer button:hover {
+  background-color: #90a955;
+  color: black;
+}
+
+/* cardapio configuração do carrinho aberto */
+.carrinhopai {
+  background-color: rgba(0, 0, 0, 0.541);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.carrinhopai h2 {
+  width: 100%;
+  color: #0a0a0ad0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
+.carrinhofilho {
+  background-color: beige;
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+  min-width: 60%;
+  min-height: 50%;
+}
+
+.carrinhofilho .carrinhoneto {
+  margin: auto;
+  display: flex;
+  background-color: #432818f8;
+  padding: 7px;
+  border-radius: 10px;
+  color: black;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  height: 500px;
+}
+
+.carrinhoneto span,
+input {
+  font-weight: bolder;
+  font-size: 65px;
+  color: white;
+}
+.carrinhoneto input {
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  width: 95%;
+  height: 120px;
+  justify-content: center;
+}
+
+.carrinhoneto .pedir {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.carrinhoneto .pedir button {
+  width: 24%;
+  height: 110px;
+  font-size: 35px;
+}
+
+/* formatação do botoe do carrinho */
+.carrinhoneto button {
+  background: #7e6d20;
+  background-image: -webkit-linear-gradient(top, #7a8a77, #2b3840);
+  background-image: -moz-linear-gradient(top, #77828a, #2b3840);
+  background-image: -ms-linear-gradient(top, #77828a, #2b3840);
+  background-image: -o-linear-gradient(top, #51565a, #2b3840);
+  background-image: linear-gradient(to bottom, #535a5f, #2b3840);
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  font-family: Courier New;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.carrinhoneto button:hover {
+  background: #89917a;
+  text-decoration: none;
+}
+
+/* tela pedidos */
+main.pedidos {
+  background-color: #50772dda;
+}
+
+main.pedidos .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.pedidos .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 90%;
+  background-color: #432818d3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main.pedidos .card-body .ctmensagem {
+  width: 100%;
+  height: 350px;
+}
+
+main.pedidos .card-body .ctmensagem {
+  max-width: 20em;
+  padding: 0;
+  font-size: 50px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main.pedidos .card-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+main.pedidos .card-body button,
+.card-footer button {
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main.pedidos .card-body button,
+.card-footer button {
+  width: 25%;
+  height: auto;
+  margin: 0;
+  padding: 0.1%;
+  font-size: 50px;
+}
+main.pedidos .card-body button #atender,
+.card-footer button #atender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #75d12a;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+main.pedidos .card-body button #encerrar,
+.card-footer button #encerrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e73333;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+input {
+  background-color: none;
+  color: #fffdfd;
+}
+
+/* tela historico */
+main.historico {
+  background-color: #50772dda;
+}
+
+main.historico h1 {
+  font-size: 6em;
+}
+
+main.historico .container {
+  border-bottom: solid 2px #a9aca9;
+  width: 100%;
+}
+
+main.historico .container .card {
+  width: 90%;
+  font-weight: bolder;
+  margin: auto;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 2%;
+}
+
+main.historico .container .card-header {
+  font-weight: bolder;
+  font-size: 0.3em;
+}
+
+.historico #logar {
+  justify-content: flex-end;
+}
+
+main.historico .container .card p {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Alteração de Dados */
+.testando .cadastro {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.testando #cadastrar {
+  color: white;
+}
+footer.voltando {
+  margin: auto;
+  color: white;
+}
+
+/* Layout do Recuperar Senha */
+.recuperar {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: auto;
+}
+
+/* Posicionamento do botão Cadastrar apenas na página de recuperarlogin */
+main.recuperar #recuperandosenha {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+main.recuperar button#recuperandosenha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-width: 140px;
+  min-height: 50px;
+  padding: 8px 20px;
+  font-size: 0.5em;
+  margin: 25px;
+}

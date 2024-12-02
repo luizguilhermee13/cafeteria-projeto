@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Estoque</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="atendimento.html">Atendimento</a></li>
+          <li><a href="preparar.html">Preparação</a></li>
+          <li><a href="solicitarentregador.html">Solicitação</a></li>
+          <li><a href="controledevendas.html">Vendas</a></li>
+          <li><a href="estoquecontrole.html">Estoque</a></li>
+        </ul>
+      </nav>
+      <div id="infofuncionario"><span> Nome: </span> <span>Cargo:</span></div>
+    </header>
+
+    <main>
+      <div class="container" id="idcontroller">
+        <h1>Controle de estoque</h1>
+        <div class="card">
+          <div class="card-header">
+            <div class="controle_header">
+              <div class="form-group">
+                <label for="idproduto">id do produto</label>
+                <input
+                  type="number"
+                  id="idproduto"
+                  placeholder="numeração do produto"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <form action="method" id="formulariologin">
+              <div class="form-group">
+                <label for="produto">Nome</label>
+                <input type="text" id="produto" placeholder="Nome do produto" />
+              </div>
+              <div class="form-group">
+                <label for="fornecedor">Fornecedor</label>
+                <input type="text" id="fornecedor" placeholder="Fornecedor" />
+              </div>
+              <div class="form-group">
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" placeholder="Quantidade" />
+              </div>
+              <div class="form-group">
+                <label for="valor">Valor</label>
+                <input type="text" id="valor" placeholder="Valor" />
+              </div>
+              <div class="form-group">
+                <label for="situacao">Situação</label>
+                <input type="text" id="situacao" placeholder="Situação" />
+              </div>
+            </form>
+          </div>
+          <div class="card-footer">
+            <button>Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer-estoque">
+      <div class="container">
+        <div class="card">
+          <input
+            type="button"
+            value="Voltar"
+            id="voltando"
+            onclick="window.location.href='paginainicial.html';"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

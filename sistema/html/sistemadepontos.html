@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>pagina do funcionario - bater ponto</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Atendimento</li>
+          <li>Preparação</li>
+          <li>Solicitação</li>
+          <li>Vendas</li>
+          <li>Estoque</li>
+        </ul>
+      </nav>
+      <div id="infofuncionario"><span> Nome: </span> <span>Cargo:</span></div>
+    </header>
+
+    <main>
+      <div class="container" id="idcontroller">
+        <h1>Pagina do funcionario</h1>
+        <div class="card">
+          <div class="card-header">Bater pontos</div>
+
+          <div class="card-body">
+            <form action="method" id="sistemapontos">
+              <div class="form-group">
+                <button>Iniciar</button>
+              </div>
+              <div class="form-group">
+                <button>Pausar</button>
+              </div>
+              <div class="form-group">
+                <button>Retomar</button>
+              </div>
+              <div class="form-group">
+                <button>Encerrar</button>
+              </div>
+              <div class="form-group">
+                <label for="formapagamento">tempo de trabalho:</label>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer">
+            <button onclick="window.location.href='historicodepontos.html';">
+              historico
+            </button>
+            <button>grava</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer-estoque">
+      <div class="container">
+        <div class="card">
+          <input
+            type="button"
+            value="Voltar"
+            id="voltando"
+            onclick="window.location.href='paginainicial.html';"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

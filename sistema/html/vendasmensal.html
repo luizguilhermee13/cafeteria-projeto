@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Vendas mensal</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="atendimento.html">Atendimento</a></li>
+          <li><a href="preparar.html">Preparação</a></li>
+          <li><a href="solicitarentregador.html">Solicitação</a></li>
+          <li><a href="controledevendas.html">Vendas</a></li>
+          <li><a href="estoquecontrole.html">Estoque</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container" id="idcontroller">
+        <h1>Controle de vendas:Mensal</h1>
+        <div class="card">
+          <div class="card-header">
+            <p>
+              Escolha o Mes:
+              <select name="meses" id="vendasmensal">
+                <optgroup id="mesesformatcao">
+                  <option>Janeiro</option>
+                  <option>Fevereiro</option>
+                  <option>Março</option>
+                  <option>Abril</option>
+                  <option>Maio</option>
+                  <option>Junho</option>
+                  <option>Julho</option>
+                  <option>Agosto</option>
+                  <option>Setembro</option>
+                  <option>Outubro</option>
+                  <option>Novembro</option>
+                  <option>Dezembro</option>
+                </optgroup>
+              </select>
+            </p>
+          </div>
+          <div class="card-body">
+            <form action="method" id="formulariologin">
+              <div class="form-group">
+                <label for="pedido">Pedido:</label>
+              </div>
+              <div class="form-group">
+                <label for="cafe">Cafes:</label>
+              </div>
+              <div class="form-group">
+                <label for="comidas">Acompanhamentos</label>
+              </div>
+              <div class="form-group">
+                <label for="valor">Valor</label>
+              </div>
+              <div class="form-group">
+                <label for="formapagamento">forma de pagamento:</label>
+              </div>
+              <div class="form-group">
+                <label for="situacao">Situação</label>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer">
+            <button>Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer-estoque">
+      <div class="container">
+        <div class="card">
+          <input
+            type="button"
+            value="Voltar"
+            id="voltando"
+            onclick="window.location.href='controledevendas.html';"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsividade.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    
+    <title>Atendimento</title>
+  </head>
+  <body class="telatendimento">
+    <header>
+      <p>disponibilidade de atendimento</p>
+      <div id="func">
+        <div id="imgfunc"></div>
+        <div id="nomefunc">nome....</div>
+        <div id="cargofunc">cargo....</div>
+      </div>
+    </header>
+
+    <main>
+      <h1>Tela de atendimento</h1>
+      <div class="container-atendimento">
+        <div class="card-atendimento">
+          <div class="header-atendimento">
+            <p>Nome</p>
+            <p>Endereço:</p>
+            <p>Numero:</p>
+          </div>
+          <div class="body-atendimento">
+            <h3>Tela de atendimento:00:00</h3>
+            <h4>00:00</h4>
+            <div class="grupobotaoatendimento">
+              <i class="fa fa-phone-square" aria-hidden="true" id="ligando"></i>
+              <i
+                class="fa fa-phone-square"
+                aria-hidden="true"
+                id="rejeitar"
+              ></i>
+            </div>
+          </div>
+
+          <div class="footer-atendimento">
+            <h3>Bloco de anotações</h3>
+            <div class="idpedido">Pedido:</div>
+            <div class="tiposcafes">
+              cafe:
+              <select name="cafes" id="tiposcafes">
+                <optgroup label="cafes tradicionais">
+                  <option>Expresso</option>
+                  <option>Macchiato</option>
+                  <option>Cappuccino</option>
+                  <option>Café com Leite</option>
+                  <option>Latte</option>
+                  <option>Mocha</option>
+                </optgroup>
+                <optgroup label="cafes especiais">
+                  <option>Cold Brew</option>
+                  <option>Affogato</option>
+                  <option>Café Orgânico</option>
+                  <option>Café com Método Chemex</option>
+                  <option>Flat White</option>
+                  <option>Blend da Casa</option>
+                </optgroup>
+                <optgroup label="cafes com sabores">
+                  <option>Latte com Lavanda</option>
+                  <option>Café com Leite de Coco</option>
+                  <option>Frappé de Caramelo</option>
+                  <option>Latte de Abóbora</option>
+                  <option>Iced Mocha Chocolate Branco</option>
+                  <option>Mocha de Avelã</option>
+                </optgroup>
+                <optgroup label="cafes gelados">
+                  <option>Café Gelado (simples)</option>
+                  <option>Cappuccino Gelado</option>
+                  <option>Frappé de Caramelo</option>
+                  <option>Frappé</option>
+                  <option>Iced Mocha Chocolate Branco</option>
+                  <option>Cold Brew</option>
+                </optgroup>
+              </select>
+              
+            </div>
+            <div class="tiposcafes">
+              acompanhamentos:
+              <select name="acompanhamentos" id="opacompanhamentos">
+                <optgroup label="acompanhamentos">
+                  <option>Pão de Queijo - 6 unidades</option>
+                  <option>Croissant</option>
+                  <option>Cookies - 3 unidades</option>
+                  <option>Torta de Queijo</option>
+                  <option>Iogurte Natural</option>
+                  <option>Cereais</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="promocao">
+              Promoções:
+              <select name="promo" id="oppromocao">
+                <optgroup label="promoções">
+                  <option>Janeiro</option>
+                  <option>Fevereiro</option>
+                  <option>Março</option>
+                  <option>Abril</option>
+                  <option>Maio</option>
+                  <option>Junho</option>
+                </optgroup>
+              </select>
+            </div>
+            
+          </div>
+          <div class="confirmacoes"> 
+            <button id="confirmado"  onclick="window.location.href='preparar.html';">confirmar</button>
+            <button id="rejeitado">rejeitar</button>
+          </div>
+        </div>
+        <div class="card-atendimento">
+          <div class="header-atendimento">
+            <p>Nome</p>
+            <p>Endereço:</p>
+            <p>Email:</p>
+          </div>
+          <div class="body-atendimento">
+            <h3>Tela de atendimento:00:00</h3>
+            <h4>00:00</h4>
+            <div class="grupobotaoatendimento">
+              <i class="fa fa-phone-square" aria-hidden="true" id="ligando"></i>
+              <i
+                class="fa fa-phone-square"
+                aria-hidden="true"
+                id="rejeitar"
+              ></i>
+            </div>
+          </div>
+
+          <div class="footer-atendimento">
+            <textarea name="atendimento" id="atendimento">
+Atendimento via chat:
+</textarea
+            >
+          </div>
+          <div class="confirmacoes"> 
+            <button id="confirmado"  onclick="window.location.href='preparar.html';">confirmar</button> 
+            <button id="rejeitado">rejeitar</button>
+          </div>
+        </div>
+        
+        <div class="card-atendimento">
+          <div class="header-atendimento">
+            <p>Nome</p>
+            <p>Endereço:</p>
+            <p>Numero:</p>
+          </div>
+          <div class="body-atendimento">
+            <h3>Tela de atendimento:00:00</h3>
+            <h4>00:00</h4>
+            <div class="grupobotaoatendimento">
+              <i class="fa fa-phone-square" aria-hidden="true" id="ligando"></i>
+              <i
+                class="fa fa-phone-square"
+                aria-hidden="true"
+                id="rejeitar"
+              ></i>
+            </div>
+          </div>
+      <!--   -->
+         <div class="footer-atendimento">
+            <div class="footer-atendimento">
+              <h3>Pedido feito</h3>
+              <div class="idpedido">Pedido:</div>
+              <div class="tiposcafes">
+                cafe:
+              </div>
+              <div class="tiposcafes">
+                acompanhamentos:
+              </div>
+              <div class="promocao">
+                Promoções:
+              </div>
+            </div>
+            
+        </div>
+        <div class="confirmacoes"> 
+          <button id="confirmado"  onclick="window.location.href='preparar.html';">confirmar</button>
+          <button id="rejeitado">rejeitar</button>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer-estoque">
+      <div class="container">
+        <div class="card">
+          <input
+            type="button"
+            value="Voltar"
+            id="voltando"
+            onclick="window.location.href='paginainicial.html';"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="../js/interatividade.js"></script>
+  </body>
+</html>

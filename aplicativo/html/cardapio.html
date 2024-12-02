@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../css/responsividade.css" />
+
+    <title>Cardapio</title>
+  </head>
+  <body class="cardapio">
+    <header>
+      <p id="ph2">Feito com muito carinho</p>
+    </header>
+
+    <main class="menu">
+      <h1>Sabores unicos a cada visita!</h1>
+
+      <h2>Cafes tradicionais</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cafeexpresso1.jpg" alt="ft" />
+          </div>
+          <div class="card-body">
+            <h2 id="nome_pedido">1.Expresso</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 4,50</span>
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button
+              class="fa fa-cart-arrow-down"
+              onclick="removerItem()"
+            ></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/macchiato.jpeg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">2.Macchiato</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 7,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button
+              class="fa fa-cart-arrow-down"
+              onclick="removerItem()"
+            ></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cappuchino.jpg" alt="ft" />
+          </div>
+          <div class="card-body">
+            <h2 id="nome_pedido">3.Cappuccino</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 5,00</span>
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+
+            <button
+              class="fa fa-cart-arrow-down"
+              onclick="removerItem()"
+            ></button>
+            <!--   <button
+              onclick="removerItem(Math.floor(Math.random() * listaCafeteria.length))"
+            ></button>
+          --></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cafecomleite.jpeg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">4.Café com Leite</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 3,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button
+              class="fa fa-cart-arrow-down"
+              onclick="removerItem()"
+            ></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cafelatte.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">5.Latte</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 5,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button
+              class="fa fa-cart-arrow-down"
+              onclick="removerItem()"
+            ></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cafemocha.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">6.Mocha</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 6,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button
+              class="fa fa-cart-arrow-down"
+              onclick="removerItem()"
+            ></button>
+          </div>
+        </div>
+      </div>
+
+      <h2>Cafes Especiais</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/coldbrew.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">7.Cold Brew</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 6,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button
+              class="fa fa-cart-arrow-down"
+              onclick="removerItem()"
+            ></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/affogato.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">8.Affogato</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 7,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button
+              class="fa fa-cart-arrow-down"
+              onclick="removerItem()"
+            ></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/organico.jpeg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">9.Café Orgânico</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 7,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cafechamex.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">10.Café com Método Chemex</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 7,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/flatwhite.jfif" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">11.Flat White</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 5,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/blenddacasa.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">12.Blend da Casa</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 6,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h2>Cafes Com Sabores</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/lattelavanda.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">13.Latte com Lavanda</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 6,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cafeleitedecoco.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">14.Café com Leite de Coco</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 5,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/frappecaramelo.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">15.Frappé de Caramelo</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 8,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/latteabobora.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">16.Latte de Abóbora</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 7,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/mocharanco.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">17.Iced Mocha com Chocolate Branco</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 8,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/mochaavela.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">18.Mocha de Avelã</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 7,25</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h2>Cafes Gelados</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cafegelado.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">19.Café Gelado (simples)</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 4,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cappuchinogelado.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">20.Cappuccino Gelado</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 7,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/frappecaramelo.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">21.Frappé de Caramelo</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 8,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/frappecaramelo.avif" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">22.Frappé</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 7,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/mocharanco.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">23.Iced Mocha com Chocolate Branco</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 8,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/coldbrew.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">24.Cold Brew</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">6,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h2>Acompanhamentos</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/paodequeijo.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">25.Pão de Queijo - 8 unidades</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 4,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/croissant.jfif" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">26.Croissant</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 2,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cookies.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">27.Cookies - 6 unidades</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 5,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/tortaqueijo.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">28.Torta de Queijo</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 10,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/iorgutmorango.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">29.Iogurte Natural</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 2,90</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cereais.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">30.Cereais</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 3,90</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="promocao">Promoções</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/twomacchiato.jpeg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">31.Macchiato- 2 unidades</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 11,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/paoqueijocafe.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">32.Cafe com leite + pão de queijo</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 4,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="../image/fatia de torta de queijo e cafe simples.jpg"
+              alt="ft"
+            />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">33.fatia da torta de queijo e cafe</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 4,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/doisfrapecaramelo.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">34.Dois Frappé de Caramelo</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 13,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cookiesecafeleite.png" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">35.cookies e cafe com leite</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 3,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cafesexpresso.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">36.Tres cafes expresso</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 6,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="promocao">Adicionais</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/canela.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">37.Canela</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 1,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/chocolateempo.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">38.Chocolate em pó</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 2,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/nozes.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">39.Nozes</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 3,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/caramelo.jfif" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">40.Caramelo</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 2,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cocoralado.jpg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">41.Coco ralado</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 2,00</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../image/cafe ficticio.jpeg" alt="ft" />
+          </div>
+
+          <div class="card-body">
+            <h2 id="nome_pedido">42.Chantilly</h2>
+          </div>
+          <div class="card-footer">
+            <span id="valorpedido">R$ 3,50</span>
+
+            <button class="add-to-cart-btn" onclick="add(this)">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+            <button onclick="removerItem()">
+              <i class="fa fa-cart-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="auxbutton">
+        <div class="card">
+          <input
+            type="button"
+            value="Voltar"
+            onclick="window.location.href='index.html';"
+          />
+        </div>
+      </div>
+
+      <div class="carrinhopai" style="display: flex">
+        <div class="carrinhofilho">
+          <h2 id="auxposition">Seu Carrinho</h2>
+          <div class="carrinhoneto">
+            <div class="item" name="item">
+              <span id="dadoscarrinho"></span>
+            </div>
+
+            <div class="localizar">
+              <span>Endereço de entrega:</span> <br />
+              <input
+                type="text"
+                id="local"
+                name="moradia"
+                placeholder="digite seu Endereço"
+              />
+              <p></p>
+            </div>
+
+            <div class="pedir">
+              <button id="fechar" onclick="fecharcarrinho()">fechar</button>
+              <button id="realizarpedido" onclick="pedir()">
+                realizar pedido
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="voltando">
+      <div class="container">
+        <div class="card">
+          <button class="footertext" onclick="acessarcarrinho()">
+            [2]Veja seu carrinho
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/interatividade.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../css/responsividade.css" />
+    <title>pedidos</title>
+  </head>
+  <body >
+    <header>
+      <p id="ph2">Faça seu pedido!</p>
+    </header>
+
+    <main class="pedidos">
+      <h1>Escolha uma opção</h1>
+
+      <div class="container">
+        <div class="card">
+          <div class="card-header">Ligar (11)1234-5432</div>
+          <div class="card-body">
+            <button>
+              <a href="tel:+5511993007413"><i class="fa fa-phone" id="atender" aria-hidden="true"></a></i>
+            </button>
+            <button>
+              <i class="fa fa-phone" id="encerrar" aria-hidden="true"></i>
+            </button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+        Envie sua Mensagem
+          </div>
+          <div class="card-body">
+            <button>
+              <textarea name="ctmensagem" class="ctmensagem">Mensagem</textarea>
+          </div>
+          <div class="card-footer">
+            <button>
+              <i class="fa fa-phone" id="atender" aria-hidden="true"></i>
+            </button>
+            <button>
+              <i class="fa fa-phone" id="encerrar" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="card-header">Pedidos via carrinho</div>
+          <div class="card-body">
+            <p>as informações ficariam aqui</p>
+          </div>
+          <div class="card-footer">
+            <button>
+              <span  id="atender">Confirmar</span>
+            </button>
+            <button>
+              <span  id="encerrar"> Rejeitar</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="voltando">
+      <div class="container">
+        <div class="card">
+          <input type="button" value="Voltar" onclick="window.location.href='index.html';" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
