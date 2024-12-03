@@ -136,9 +136,8 @@
     box-sizing: border-box;
   }
 
-  /* O input ocupará o restante do espaço disponível */
   .form-group input {
-    flex: 2; /* Define que o input ocupe 2 partes da largura */
+    flex: 2;
     padding: 0.8em;
     font-size: 0.6em;
   }
@@ -193,7 +192,7 @@
   }
 
   .cadastro .form-group input {
-    flex: 2; /* Define que o input ocupe 2 partes da largura */
+    flex: 2;
     padding: 0;
     font-size: 0.5em;
   }
@@ -230,7 +229,7 @@
   }
 
   .menu .container {
-    width: 100%; /* Certifique-se de que o container ocupa toda a largura */
+    width: 100%;
     margin: 1% auto;
     padding: 0;
     box-sizing: border-box;
@@ -412,12 +411,12 @@
   main.pedidos .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* centralizar horizontalmente */
+    align-items: center;
   }
 
   main.pedidos .container .card {
     padding: 10px;
-    width: 95%; /* largura do card */
+    width: 95%;
   }
 
   main.pedidos .card-header {
@@ -442,15 +441,15 @@
 
   main.pedidos .card-footer {
     display: flex;
-    justify-content: space-evenly; /* centralizar horizontalmente */
-    align-items: center; /* centralizar verticalmente */
+    justify-content: space-evenly;
+    align-items: center;
     padding: 20px;
   }
 
   main.pedidos .card-body button,
   .card-footer button {
-    width: 50%; /* largura dos botões */
-    height: 20px; /* altura dos botões */
+    width: 50%;
+    height: 20px;
     font-size: 10px;
     border-radius: 10px;
     border: none;
@@ -488,8 +487,8 @@
   }
 
   input {
-    background-color: none; /* Escolha uma cor de fundo */
-    color: #000000; /* Mantém o texto claro */
+    background-color: none;
+    color: #000000;
   }
 
   /* historico */
@@ -544,8 +543,8 @@
   /* Posicionamento do botão Cadastrar apenas na página de recuperarlogin */
   main.recuperar #recuperandosenha {
     display: flex;
-    justify-content: flex-end; /* Alinha o botão à direita */
-    width: 100%; /* Faz o div ocupar 100% da largura disponível */
+    justify-content: flex-end;
+    width: 100%;
     font-size: 4em;
   }
   main.recuperar input {
@@ -684,7 +683,7 @@
   }
 
   .cadastro .form-group input {
-    flex: 2; /* Define que o input ocupe 2 partes da largura */
+    flex: 2;
     padding: 0;
     font-size: 0.7em;
   }
@@ -720,7 +719,7 @@
   }
 
   .menu .container {
-    width: 90%; /* Certifique-se de que o container ocupa toda a largura */
+    width: 90%;
 
     margin: 1% 0%;
     padding: 0;
@@ -968,7 +967,7 @@
     margin: auto;
     width: 100%;
     box-sizing: border-box;
-    padding: 0px; /* Ajuste o espaçamento interno do botão */
+    padding: 0px;
   }
 
   /* posicionamento do footer do card ou seja, esqueceu senha,botao entrar e botao cadastrar*/
@@ -1028,7 +1027,7 @@
   }
 
   .cadastro .form-group input {
-    flex: 2; /* Define que o input ocupe 2 partes da largura */
+    flex: 2;
     padding: 0;
     font-size: 0.7em;
   }
@@ -1064,8 +1063,7 @@
   }
 
   .menu .container {
-    width: 90%; /* Certifique-se de que o container ocupa toda a largura */
-
+    width: 90%;
     margin: 1% 0%;
     padding: 0;
     box-sizing: border-box;
@@ -1370,7 +1368,7 @@
   }
 
   .cadastro .form-group input {
-    flex: 2; /* Define que o input ocupe 2 partes da largura */
+    flex: 2;
     padding: 0;
     font-size: 0.7em;
   }
@@ -1407,8 +1405,7 @@
   }
 
   .menu .container {
-    width: 90%; /* Certifique-se de que o container ocupa toda a largura */
-
+    width: 90%;
     margin: 1% 0%;
     padding: 0;
     box-sizing: border-box;
@@ -1654,7 +1651,7 @@
     margin: auto;
     width: 100%;
     box-sizing: border-box;
-    padding: 8px 30px; /* Ajuste o espaçamento interno do botão */
+    padding: 8px 30px;
   }
 
   /* posicionamento do footer do card ou seja, esqueceu senha,botao entrar e botao cadastrar*/
@@ -1665,7 +1662,7 @@
   /* formatação do footer do card ou seja, esqueceu senha,botao entrar e botao cadastrar*/
   .form-group button#btnEntrar {
     width: 100%;
-    padding: 8px 100px; /* Ajuste o espaçamento interno do botão */
+    padding: 8px 100px;
     font-size: 1.2em;
     margin: 0px;
   }
@@ -1714,7 +1711,7 @@
   }
 
   .cadastro .form-group input {
-    flex: 2; /* Define que o input ocupe 2 partes da largura */
+    flex: 2;
     padding: 0;
     font-size: 1em;
   }
@@ -1751,8 +1748,7 @@
   }
 
   .menu .container {
-    width: 90%; /* Certifique-se de que o container ocupa toda a largura */
-
+    width: 90%;
     margin: 1% 0%;
     padding: 0;
     box-sizing: border-box;

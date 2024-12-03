@@ -3,7 +3,7 @@ const mysql = require("mysql2");
 const cors = require("cors");
 const Singleton = require("./static/singleton");
 const { default: criarConta } = require("./src/cadastro");
-// Importa a classe Singleton
+// Importantando a classe Singleton
 
 const app = express();
 app.use(express.json());
@@ -18,7 +18,7 @@ const db = mysql.createConnection({
   database: "bd_cafeteria", // Nome do banco de dados
 });
 
-// Conecta ao banco de dados e armazena no Singleton
+// Conecta ao banco de dados e armazenandoo Singleton
 db.connect((err) => {
   if (err) {
     console.log("Erro ao conectar ao banco:", err);

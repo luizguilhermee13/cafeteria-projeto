@@ -17,9 +17,9 @@ function validarLogin() {
     (matricula === "60050" && senha === "202024") ||
     (matricula === "60051" && senha === "222024")
   ) {
-    window.location.href = "paginainicial.html"; // Redireciona para a página inicial
+    window.location.href = "paginainicial.html";
   } else {
-    alert("Matrícula ou senha inválida. Tente novamente."); // Exibe mensagem de erro
+    alert("Matrícula ou senha inválida. Tente novamente.");
   }
 }
 
@@ -45,20 +45,20 @@ function atualizarDataHora() {
     minute: "2-digit",
   });
 
-  // Insere a data e a hora no HTML
+  // Inserendo data e hora no HTML
   document.getElementById("data").innerText = dataFormatada;
   document.getElementById("hora").innerText = horaFormatada;
 }
 
-// Atualiza a data e hora imediatamente ao carregar a página
+// Atualizando a data e hora ao carregar a página
 atualizarDataHora();
 
-// Atualiza a hora a cada minuto
+// Atualizando a hora a cada minuto
 setInterval(atualizarDataHora, 60000);
 
 // Função para gerar um número aleatório de 4 dígitos
 function gerarNumeroPedido() {
-  return Math.floor(1000 + Math.random() * 9000); // Gera um número entre 1000 e 9999
+  return Math.floor(1000 + Math.random() * 9000);
 }
 
 // Função para selecionar um endereço aleatório
@@ -106,41 +106,3 @@ function concluida() {
 function naoconcluida() {
   alert("pedido não concluido");
 }
-
-// // Adiciona evento ao botão confirmar
-// document.getElementById("confirmado").addEventListener("click", () => {
-//   // Captura os valores selecionados
-//   const cafe = document.getElementById("tiposcafes").value;
-//   const acompanhamento = document.getElementById("opacompanhamentos").value;
-//   const promocao = document.getElementById("oppromocao").value;
-
-//   // Cria um objeto com os valores
-//   const pedido = {
-//     cafe,
-//     acompanhamento,
-//     promocao,
-//   };
-
-//   // Armazena o pedido no localStorage
-//   localStorage.setItem("pedido", JSON.stringify(pedido));
-
-//   // Redireciona para a página "preparar.html"
-//   window.location.href = "preparar.html";
-// });
-
-// // Recupera o pedido do localStorage
-// const pedido = JSON.parse(localStorage.getItem("pedido"));
-
-// // Verifica se há dados no localStorage
-// if (pedido) {
-//   // Atualiza os elementos com os valores armazenados
-//   document.querySelector(
-//     ".configunica .header:nth-child(1)"
-//   ).innerText = `Cafés: ${pedido.cafe}`;
-//   document.querySelector(
-//     ".configunica .header:nth-child(2)"
-//   ).innerText = `Acompanhamentos: ${pedido.acompanhamento}`;
-//   document.querySelector(
-//     ".configunica .header:nth-child(3)"
-//   ).innerText = `Promoções: ${pedido.promocao}`;
-// }

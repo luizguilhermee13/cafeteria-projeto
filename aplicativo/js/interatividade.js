@@ -121,9 +121,9 @@ function pedircarrinho() {
 document
   .getElementById("formCadastro")
   .addEventListener("submit", async (event) => {
-    event.preventDefault(); // Evita o recarregamento da página ao enviar o formulário
+    event.preventDefault();
 
-    // Captura os valores dos campos do formulário
+    // Captura dos valores dos campos do formulário
     const nome = document.getElementById("nome").value;
     const idade = document.getElementById("idade").value;
     const sexo = document.getElementById("sexo").value;
@@ -177,7 +177,7 @@ const formCadastro = document.getElementById("formCadastro");
 formCadastro.addEventListener("submit", function (event) {
   event.preventDefault(); // Evita o envio do formulário sem validação
 
-  // Captura os valores dos campos
+  // Captura dos valores dos campos
   const nome = document.getElementById("nome").value.trim();
   const idade = parseInt(document.getElementById("idade").value, 10);
   const sexo = document.getElementById("sexo").value.trim().toLowerCase();
@@ -212,9 +212,9 @@ formCadastro.addEventListener("submit", function (event) {
     return;
   }
 
-  // Se todas as validações passarem, exibe mensagem de sucesso
+  // Se validações passarem = mensagem de sucesso
   alert("Cadastro realizado com sucesso!");
 
-  // Aqui você pode enviar os dados para o servidor ou redirecionar
+  // enviando os dados para o servidor
   formCadastro.submit();
 });
