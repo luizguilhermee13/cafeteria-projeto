@@ -1,0 +1,135 @@
+/* 
+  ========================================
+  Seção de formatações globais da tela de login
+  ========================================
+*/
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  width: 420px;
+  height: 500px;
+  padding: 28px;
+  border-radius: 0.95rem;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1); /* shadow-2xl */
+}
+
+.card_login {
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+  ========================================
+  Seção de Cabeçalho do CARD(Header)
+  ========================================
+*/
+
+.card_header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 36%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.card_header .icon,
+.title,
+.text {
+  width: 100%;
+  text-align: center;
+}
+
+.card_header .icon {
+  height: auto;
+  border-radius: 40px;
+  color: white;
+}
+.card_header .icon span {
+  background-color: var(--cor-Button);
+  font-size: 3em;
+  border-radius: 10em;
+  padding: 6px;
+}
+
+.card_header .title {
+  height: 30%;
+  font-size: 1.5em;
+  font-family: cursive;
+}
+
+.card_header .text {
+  width: 100%;
+  height: 24%;
+  font-size: 1em;
+  color: var(--cor-textoSegundario);
+}
+
+/* 
+  ========================================
+  Seção do corpo do CARD(main)
+  ========================================
+*/
+
+.card_main {
+  width: 100%;
+  height: 36%;
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+
+.card_main label {
+  color: var(--cor-textoPrincipal);
+}
+.card_main input {
+  height: 40px;
+  background: var(--cor-fundoInput);
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 4px 20px;
+  border: 2px solid #ccc;
+  outline: none;
+  transition: 0.1s;
+}
+
+.card_main input:focus {
+  border-color: var(--cor-detalhes);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 
+  ========================================
+  Seção de rodapé do CARD(footer)
+  ========================================
+*/
+
+.card_footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  height: 18%;
+  color: var(--cor-textoSegundario);
+}
+
+.card_footer button {
+  width: 100%;
+  color: white;
+  background: var(--cor-Button);
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 10px;
+}

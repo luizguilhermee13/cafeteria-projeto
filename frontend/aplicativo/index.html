@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=local_cafe"
+    />
+    <title>Cafeteria Gourmet!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card_login">
+        <div class="card_header">
+          <div class="icon">
+            <span class="material-symbols-outlined"> local_cafe </span>
+          </div>
+          <div class="title"><h4>Café Gourmet</h4></div>
+          <div class="text"><p>Entre na sua conta</p></div>
+        </div>
+        <div class="card_main">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="seu@email.com"
+          />
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" id="senha" placeholder="******" />
+        </div>
+        <div class="card_footer">
+          <button type="button" onclick="logar()">Entrar</button>
+          <p>Não tem uma conta? Cadastre-se</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function logar(email, senha) {
+      var emailDigitado = document.getElementById("email").value;
+      var senhaDigitada = document.getElementById("senha").value;
+
+      if (emailDigitado == "luiz@" && senhaDigitada == "123") {
+        window.location.href = "pages/cardapio.html";
+      } else {
+        alert("E-mail ou senha incorretos!");
+      }
+    }
+  </script>
+</html>
