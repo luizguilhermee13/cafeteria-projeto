@@ -108,7 +108,9 @@ nav {
 #containerCardapio {
   margin: 0;
   padding: 0;
-  height: auto;
+  height: 100vh;
+  background-color: #2d1f1a28;
+  box-sizing: border-box;
 }
 
 .ContainerCategorias {
@@ -141,4 +143,41 @@ nav {
   color: white;
   opacity: 0.7;
   background: var(--cor-detalhes);
+}
+
+.Cards_Container {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+  gap: 1rem;
+  background-color: #2d1f1a62;
+}
+
+.Cards_Container .Card_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 4px;
+  width: 17.4rem;
+  height: 21rem;
+  background-color: brown;
+}
+
+.Card_items .card_image img {
+  width: 100%;
+  height: 12rem;
+}
+
+.Card_items .card_description h3,
+p {
+  margin: 0;
+}
+
+.Card_items .card_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
