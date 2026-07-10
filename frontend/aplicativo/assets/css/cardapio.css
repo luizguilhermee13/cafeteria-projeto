@@ -104,3 +104,41 @@ nav {
   opacity: 0.7;
   background: var(--cor-alert);
 }
+
+#containerCardapio {
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.ContainerCategorias {
+  padding: 2rem 0;
+}
+
+.ContainerCategorias h2 {
+  margin: 0;
+  font-family: sans-serif;
+  color: #2d1f1a;
+}
+
+.ContainerCategorias ul {
+  margin: 1rem auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-grow: row wrap;
+  gap: 1rem;
+}
+
+.ContainerCategorias ul > li {
+  padding: 0.6rem;
+  border: 1px solid #2d1f1a5e;
+  border-radius: 12px;
+  color: #2d1f1a;
+}
+
+.ContainerCategorias ul > li:hover {
+  color: white;
+  opacity: 0.7;
+  background: var(--cor-detalhes);
+}
