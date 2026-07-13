@@ -105,13 +105,25 @@ nav {
   background: var(--cor-alert);
 }
 
+/* 
+  ========================================
+  formatando container pai das telas
+  ========================================
+*/
+
 #containerCardapio {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #2d1f1a28;
+  background-color: #d8532328;
   box-sizing: border-box;
 }
+
+/* 
+  ========================================
+  formatando tela Cardapio
+  ========================================
+*/
 
 .ContainerCategorias {
   padding: 2rem 0;
@@ -145,6 +157,12 @@ nav {
   background: var(--cor-detalhes);
 }
 
+/* 
+  ========================================
+  formatando tela Cardapio - cards
+  ========================================
+*/
+
 .Cards_Container {
   margin: 0;
   padding: 0;
@@ -152,7 +170,7 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   place-items: center;
   gap: 1rem;
-  background-color: #2d1f1a62;
+  color: var(--cor-textoPrincipal);
 }
 
 .Cards_Container .Card_items {
@@ -160,15 +178,22 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
-  padding: 4px;
+  padding: 0;
   width: 17.4rem;
-  height: 21rem;
-  background-color: brown;
+  height: 22rem;
+  background-color: rgb(250, 250, 250);
+  border-radius: 1rem;
 }
 
 .Card_items .card_image img {
   width: 100%;
   height: 12rem;
+  border-radius: 1rem 1rem 0 0;
+  background-size: cover;
+}
+
+.Card_items .card_description {
+  padding: 0 1rem;
 }
 
 .Card_items .card_description h3,
@@ -176,8 +201,34 @@ p {
   margin: 0;
 }
 
+.Card_items .card_description h3 {
+  font-family: sans-serif;
+  color: var(--cor-textoPrincipal);
+}
+
+.Card_items .card_description p {
+  color: var(--cor-textoSegundario);
+}
+
 .Card_items .card_footer {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  border-radius: 0 0 1rem 1rem;
+  font-family: sans-serif;
+}
+
+.Card_items .card_footer p {
+  color: var(--cor-Button);
+  font-size: larger;
+}
+
+.Card_items .card_footer button {
+  padding: 0.3rem;
+  background-color: var(--cor-Button);
+  color: white;
+  font-size: medium;
+  border-radius: 0.5rem;
 }

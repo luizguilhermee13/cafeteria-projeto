@@ -77,3 +77,27 @@ const cardapio = [
       "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&auto=format&fit=crop&q=60",
   },
 ];
+
+/*
+      <div class="Cards_Container">
+        <div class="Card_items">
+          <div class="card_image">
+            <img
+              src="https://images.unsplash.com/photo-1497636577773-f1231844b336?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400"
+              alt="img"
+            />
+          </div>
+          <div class="card_description">
+            <h3>titulo item</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+          </div>
+          <div class="card_footer">
+            <p>R$ 12.90</p>
+            <button>+ Adicionar</button>
+          </div>
+        </div>
+        <div class="Card_items">a</div>
+        <div class="Card_items">a</div>
+        <div class="Card_items">a</div>
+      </div>
+*/
