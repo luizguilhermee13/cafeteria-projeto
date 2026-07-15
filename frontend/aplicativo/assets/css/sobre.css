@@ -1,26 +1,151 @@
+/* 
+  ========================================
+  formatando Estrutura da tela
+  ========================================
+*/
 #containerSobre {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  background-color: #d8532328;
+  height: auto;
+
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  gap: 0.5rem;
-  box-sizing: content-box;
+  gap: 2rem;
 }
 
 .containerCards {
   margin: 0;
-  padding: 1.5rem;
-  width: 96%;
-  min-height: 10vh;
-  background-color: antiquewhite;
+  width: auto;
+  height: auto;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+}
+.containerCards p {
+  color: black;
 }
 
 footer {
+  margin: auto;
   padding: 2rem;
   text-align: center;
+}
+
+/* 
+  ========================================
+  formatando cards 
+  ========================================
+*/
+
+/* card title */
+
+.cardTitle {
+  height: 20rem;
+  background-image: url("https://images.unsplash.com/photo-1527512666523-bb0e4389d842?crop=entropy");
+  background-size: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 2rem;
+  font-size: x-large;
+}
+
+.cardTitle h2,
+.cardTitle p {
+  margin: 0;
+  color: white;
+}
+
+.cardTitle h2 {
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.cardHistory,
+.cardContact,
+.cardRSocial,
+.cardLFisica {
+  padding: 2rem;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* card historia */
+.cardHistory {
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.cardHistory h4 {
+  margin: 0;
+  padding: 0;
+  font-size: x-large;
+}
+
+.cardHistory p {
+  margin: 0;
+  color: var(--cor-textoSegundario);
+  text-align: justify;
+  font-size: large;
+}
+
+/* card contato */
+
+.cardContact {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.cardContact .cardBody {
+  background: var(--cor-fundoGeral);
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+.cardBody .icon span {
+  width: 100%;
+  font-size: 2rem;
+  background-color: var(--cor-Button);
+  color: white;
+  border-radius: 2rem;
+  padding: 6px 4px;
+  text-align: center;
+}
+
+.cardBody ol {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: space-evenly;
+}
+.cardBody li {
+  list-style-type: none;
+  color: var(--cor-textoSegundario);
+}
+.cardContact .cardBody p {
+  margin: 0;
+  padding: 0;
+}
+
+.cardContact h4 {
+  margin: 0;
+  font-size: x-large;
+  color: var(--cor-textoPrincipal);
+}
+/* card rede social*/
+.cardRSocial {
+}
+/* card loja fisica*/
+
+.cardLFisica {
 }
