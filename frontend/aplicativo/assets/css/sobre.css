@@ -32,6 +32,7 @@ footer {
   margin: auto;
   padding: 2rem;
   text-align: center;
+  color: var(--cor-textoSegundario);
 }
 
 /* 
@@ -144,8 +145,64 @@ footer {
 }
 /* card rede social*/
 .cardRSocial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.cardRSocial .cardButtons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.cardRSocial .cardButtons button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--cor-fundoGeral);
+  border: none;
+  border-radius: 0.8rem;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.cardRSocial .cardButtons button:hover {
+  background-color: var(--cor-detalhes);
+}
+.cardRSocial h4 {
+  margin: 0;
+  font-size: x-large;
+  color: var(--cor-textoPrincipal);
 }
 /* card loja fisica*/
 
 .cardLFisica {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  text-align: center;
+}
+
+.cardLFisica h4 {
+  margin: 0;
+  font-size: x-large;
+  color: var(--cor-textoPrincipal);
+}
+.cardLFisica .lojaImage {
+  width: 100%;
+  height: 14rem;
+  background-image: url("https://images.unsplash.com/photo-1768812141741-4ee1bf3d9095?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080");
+  color: white;
+  text-align: left;
+  align-content: end;
+  position: relative;
+}
+
+.cardLFisica .lojaImage span {
+  font-size: larger;
+  font-weight: bolder;
+  position: absolute;
+  top: 80%;
+  left: 2%;
 }
