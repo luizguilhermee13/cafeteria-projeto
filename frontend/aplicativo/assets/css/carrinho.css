@@ -1,0 +1,31 @@
+/* 
+  ========================================
+  Seção de formatações globais do carrinho
+  ========================================
+*/
+
+.containerCarrinho {
+  background-color: var(--cor-Button);
+  width: 100%;
+  height: 100vh;
+}
+
+.carrinhoVazio h2,
+.carrinhoVazio p {
+  margin: 0;
+}
+
+.carrinhoVazio {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--cor-detalhes);
+}
+
+.carrinhoVazio .icon {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: larger;
+}
