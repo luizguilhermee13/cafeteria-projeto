@@ -1,0 +1,88 @@
+/* 
+  ========================================
+  Seção de formatações globais da historico
+  ========================================
+*/
+
+.ContainerHistorico {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.cardHistorico {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: 1rem;
+}
+
+.headerCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.horarioHistorico {
+  padding: 0 1rem;
+}
+
+.mainHistorico {
+  display: flex;
+  gap: 1rem;
+}
+
+.mainHistorico img {
+  width: 100%;
+  height: 100%;
+}
+
+.mainHistorico p {
+  margin: 0;
+}
+
+.mainHistorico {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+  border-bottom: 1px solid silver;
+}
+.mainHistorico .descricaoItemTemporario {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.1rem;
+  font-size: larger;
+}
+
+.footerHistorico {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footerHistorico .totalItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: larger;
+}
+
+.footerHistorico button {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
