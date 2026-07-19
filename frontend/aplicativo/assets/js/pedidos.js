@@ -57,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function HistoricoPage() {
           <div class="totalItem"><span>Total:</span> <span>R$ 51.70</span></div>
           <button>Pedir Novamente</button>
         </div>
-    </div>`;
+    </div>
+    `;
     })
     .join("");
 
