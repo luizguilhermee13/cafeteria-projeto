@@ -184,6 +184,9 @@ nav {
   border-radius: 1rem;
 }
 
+.Cards_Container .Card_items:hover {
+  scale: 1.1;
+}
 .Card_items .card_image img {
   width: 100%;
   height: 12rem;
