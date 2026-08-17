@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function CardapioPage() {
        </div>
        <div class="card_footer">
         <p>R$ ${item.preco}</p>
+        <span id="esconder">0</span>
         <button>+ Adicionar</button>
        </div>       
        </div>
