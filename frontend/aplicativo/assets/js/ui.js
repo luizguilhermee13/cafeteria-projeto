@@ -80,6 +80,14 @@ document.addEventListener("DOMContentLoaded", function CardapioPage() {
   ];
 
   let ContainerCards = document.getElementById("ContainerCards");
+  let topicoSelecionado = document.querySelector("ul");
+
+  function selecionarTopico(e) {
+    let topicoClicado = e.target.innerHTML;
+    console.log(topicoClicado);
+  }
+
+  topicoSelecionado.addEventListener("click", selecionarTopico);
 
   const CardsPage = cardapio
     .map((item) => {
