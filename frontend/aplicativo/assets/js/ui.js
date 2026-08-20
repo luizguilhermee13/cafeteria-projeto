@@ -82,13 +82,6 @@ document.addEventListener("DOMContentLoaded", function CardapioPage() {
   let ContainerCards = document.getElementById("ContainerCards");
   let topicoSelecionado = document.querySelector("ul");
 
-  function selecionarTopico(e) {
-    let topicoClicado = e.target.innerHTML;
-    console.log(topicoClicado);
-  }
-
-  topicoSelecionado.addEventListener("click", selecionarTopico);
-
   const CardsPage = cardapio
     .map((item) => {
       return `
@@ -113,4 +106,45 @@ document.addEventListener("DOMContentLoaded", function CardapioPage() {
     .join("");
 
   ContainerCards.innerHTML = CardsPage;
+
+  function selecionarTopico(e) {
+    let topicoClicado = e.target.innerHTML;
+    console.log(topicoClicado);
+
+    let produtosFiltrados;
+
+    if (topicoClicado === "Todos") {
+      produtosFiltrados = cardapio;
+    } else {
+      produtosFiltrados = cardapio.filter((item) => {
+        return item.categoria === topicoClicado;
+      });
+    }
+
+    let CardsPage = produtosFiltrados
+      .map((item) => {
+        return `
+      <div class="Cards_Container">
+       <div class="Card_items">
+        <div class="card_image">
+          <img src="${item.imagem}" alt="img"/>
+       </div>
+       <div class="card_description">
+        <h3>${item.nome}</h3>
+        <p>${item.descricao}</p>
+       </div>
+       <div class="card_footer">
+        <p>R$ ${item.preco}</p>
+        <span id="esconder">0</span>
+        <button>+ Adicionar</button>
+       </div>       
+       </div>
+      </div>`;
+      })
+      .join("");
+
+    ContainerCards.innerHTML = CardsPage;
+  }
+
+  topicoSelecionado.addEventListener("click", selecionarTopico);
 });
