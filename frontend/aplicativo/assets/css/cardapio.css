@@ -114,7 +114,7 @@ nav {
 #containerCardapio {
   margin: 0;
   padding: 0 1rem;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -238,4 +238,79 @@ p {
 
 #esconder {
   display: none;
+}
+
+/* 
+  ========================================
+  formatando temporaria do carrinho
+  ========================================
+*/
+
+.cart-container {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
+
+.cart h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.cart-items {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777777;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 16px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+#realizarPedido {
+  width: 100%;
+  background-color: #ffc107;
+  color: #2c2c2c;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+#realizarPedido:hover {
+  background-color: #e0a800;
+}
+
+#realizarPedido:active {
+  transform: scale(0.98);
 }

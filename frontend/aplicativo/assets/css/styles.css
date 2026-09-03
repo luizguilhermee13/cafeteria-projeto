@@ -22,7 +22,7 @@ body {
   box-sizing: border-box;
   background: var(--cor-fundoGeral);
   max-width: 1200px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header {
