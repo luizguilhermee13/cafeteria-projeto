@@ -23,12 +23,7 @@
         </div>
         <div class="card_main">
           <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="seu@email.com"
-          />
+          <input type="email" name="email" id="email" placeholder="seu@email.com" />
           <label for="senha">Senha</label>
           <input type="password" name="senha" id="senha" placeholder="******" />
         </div>
@@ -45,7 +40,7 @@
       var emailDigitado = document.getElementById("email").value;
       var senhaDigitada = document.getElementById("senha").value;
 
-      if (emailDigitado == "luiz@" && senhaDigitada == "123") {
+      if (emailDigitado == "adm" && senhaDigitada == "123") {
         window.location.href = "frontend/aplicativo/pages/cardapio.html";
       } else {
         alert("E-mail ou senha incorretos!");

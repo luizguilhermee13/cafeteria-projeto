@@ -1,33 +1,84 @@
-☕ Café Gourmet - Sistema de Cafeteria
-⚠️ Status do Projeto: Atualmente, este repositório encontra-se em fase de reestruturação. Estou realizando uma reformulação completa em todo o layout e na arquitetura do código para elevar a qualidade visual e a experiência do usuário.
+# ☕ Café Gourmet
 
-Este projeto foi originalmente desenvolvido como Trabalho de Conclusão de Curso (TCC) no ano de 2024, para o curso superior de Sistemas de Informação. O objetivo principal foi a criação de uma solução completa composta por um aplicativo de pedidos online para os clientes e, em contrapartida, um sistema de controle interno para os funcionários gerenciarem o recebimento e o fluxo dos pedidos em tempo real.
+Sistema web de cafeteria desenvolvido originalmente como **Trabalho de Conclusão de Curso (TCC)** do curso de **Sistemas de Informação**, em 2024.
 
-🚀 Sobre o Projeto
-O sistema foi idealizado para cobrir as duas pontas de uma cafeteria moderna que busca digitalizar seu atendimento:
+O projeto foi idealizado para representar duas áreas de uma cafeteria: uma interface para os clientes realizarem seus pedidos e um sistema interno para auxiliar os funcionários no acompanhamento das operações.
 
-Interface do Cliente: Um ambiente intuitivo para navegação pelo cardápio e realização de pedidos online.
+🌐 **Projeto online:**  
+https://luizguilhermee13.github.io/cafeteria-projeto/
 
-Painel do Funcionário: Um sistema de controle voltado para a equipe da cafeteria visualizar, organizar e acompanhar o status dos pedidos recebidos.
+---
 
-🛠 Em Andamento: Reestruturação e Aperfeiçoamento
-Nesta nova fase de melhorias, as seguintes etapas estão sendo implementadas e refinadas:
+## 📌 Status do Projeto
 
-Reestruturação de Layout: Modificação completa da interface gráfica para uma experiência visual moderna e alinhada ao conceito gourmet.
+🟡 **Em reestruturação**
 
-Implementação da Lógica do Carrinho: Desenvolvimento das funcionalidades de manipulação de itens, incluindo adição, remoção e cálculo de totais em tempo real no app do cliente.
+Atualmente estou retomando o projeto para melhorar sua interface, organização do código, responsividade e funcionalidades.
 
-Refatoração do Código: Otimização da base de código atual para garantir maior legibilidade, modularidade e melhor performance do sistema.
+O objetivo desta nova etapa é aplicar os conhecimentos que adquiri após a criação da versão original do projeto.
 
-Otimização de Responsividade: Ajustes nos estilos CSS para garantir que a plataforma seja perfeitamente acessível e visualmente coerente em diferentes dispositivos (mobile, tablets e desktops).
+---
 
-🛠 Tecnologias Utilizadas
-O projeto utiliza as tecnologias essenciais do desenvolvimento web:
+## 🚀 Sobre o Projeto
 
-HTML5: Estruturação semântica de todas as páginas.
+O Café Gourmet foi dividido em duas áreas principais:
 
-CSS3: Estilização responsiva e design focado na temática gourmet.
+### 🛒 Aplicativo do Cliente
 
-JavaScript: Implementação da lógica de interação, manipulação do DOM e gerenciamento do carrinho/pedidos.
+Interface destinada ao cliente, contendo páginas para:
 
-GitHub: Controle de versão e hospedagem do repositório.
+- Visualização do cardápio
+- Carrinho de compras
+- Histórico de pedidos
+- Informações sobre a cafeteria
+
+### 💼 Sistema Interno
+
+Área criada para representar o ambiente utilizado pelos funcionários da cafeteria, contendo funcionalidades e telas relacionadas a:
+
+- Atendimento de pedidos
+- Preparação de pedidos
+- Controle de estoque
+- Controle de vendas
+- Solicitação de entregador
+- Sistema de pontos
+
+---
+
+## 🛠️ Reestruturação Atual
+
+Entre as melhorias planejadas e em desenvolvimento estão:
+
+- 🎨 Reformulação do layout
+- 🛒 Implementação e melhoria da lógica do carrinho
+- ♻️ Refatoração e organização do código
+- 📱 Melhorias de responsividade
+- ⚙️ Evolução das funcionalidades do sistema
+
+---
+
+## 💻 Tecnologias
+
+- **HTML5** — estrutura das páginas
+- **CSS3** — estilização e responsividade
+- **JavaScript** — interações e manipulação do DOM
+- **SQL** — modelagem inicial do banco de dados
+- **Git / GitHub** — versionamento do projeto
+- **GitHub Pages** — publicação da aplicação
+
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+cafeteria-projeto/
+│
+├── frontend/
+│   ├── aplicativo/    # Área do cliente
+│   └── sistema/       # Área interna da cafeteria
+│
+├── bancodados/        # Modelagem do banco de dados
+│
+├── index.html
+└── README.md
+```
