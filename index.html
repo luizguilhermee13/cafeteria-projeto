@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="card_login">
+      <form id="loginForm" class="card_login">
         <div class="card_header">
           <div class="icon">
             <span class="material-symbols-outlined"> local_cafe </span>
@@ -21,30 +21,36 @@
           <div class="title"><h4>Café Gourmet</h4></div>
           <div class="text"><p>Entre na sua conta</p></div>
         </div>
+
         <div class="card_main">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="seu@email.com" />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="adm"
+            autocomplete="username"
+            required
+          />
+
           <label for="senha">Senha</label>
-          <input type="password" name="senha" id="senha" placeholder="******" />
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="123"
+            autocomplete="current-password"
+            required
+          />
         </div>
+
         <div class="card_footer">
-          <button type="button" onclick="logar()">Entrar</button>
+          <button type="submit">Entrar</button>
           <p>Não tem uma conta? Cadastre-se</p>
         </div>
-      </div>
+      </form>
     </div>
+
+    <script type="module" src="script.js"></script>
   </body>
-
-  <script>
-    function logar(email, senha) {
-      var emailDigitado = document.getElementById("email").value;
-      var senhaDigitada = document.getElementById("senha").value;
-
-      if (emailDigitado == "adm" && senhaDigitada == "123") {
-        window.location.href = "frontend/aplicativo/pages/cardapio.html";
-      } else {
-        alert("E-mail ou senha incorretos!");
-      }
-    }
-  </script>
 </html>

@@ -1,8 +1,8 @@
 // Variável do carrinho global
-let carrinho = [];
-let cardapio = [];
+export let carrinho = [];
+export let cardapio = [];
 
-document.addEventListener("DOMContentLoaded", function CardapioPage() {
+export function CardapioPage() {
   cardapio = [
     // Categoria: Café
     {
@@ -37,8 +37,6 @@ document.addEventListener("DOMContentLoaded", function CardapioPage() {
       categoria: "Café",
       imagem: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500&auto=format&fit=crop&q=60",
     },
-
-    // Categoria: Padaria
     {
       id: 5,
       nome: "Croissant Francês",
@@ -55,8 +53,6 @@ document.addEventListener("DOMContentLoaded", function CardapioPage() {
       categoria: "Padaria",
       imagem: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&auto=format&fit=crop&q=60",
     },
-
-    // Categoria: Doces
     {
       id: 7,
       nome: "Torta de Amêndoas",
@@ -143,75 +139,4 @@ document.addEventListener("DOMContentLoaded", function CardapioPage() {
   }
 
   topicoSelecionado.addEventListener("click", selecionarTopico);
-
-  renderizarCarrinho();
-});
-
-function renderizarCarrinho() {
-  const cartItemsDiv = document.getElementById("cart-items");
-  const cartVazio = document.getElementById("cart-null");
-  const cartTotal = document.getElementById("cart-total");
-  const cartButton = document.getElementById("realizarPedido");
-
-  if (!cartItemsDiv) return;
-
-  cartItemsDiv.innerHTML = "";
-
-  if (carrinho.length === 0) {
-    if (cartVazio) cartVazio.style.display = "block";
-    if (cartButton) cartButton.disabled = true;
-    if (cartTotal) cartTotal.innerText = "R$ 0.00";
-  } else {
-    if (cartVazio) cartVazio.style.display = "none";
-    if (cartButton) cartButton.disabled = false;
-
-    let valorTotalGeral = 0;
-
-    carrinho.forEach((item) => {
-      const subtotal = item.preco * item.quantidade;
-      valorTotalGeral += subtotal;
-
-      const itemDiv = document.createElement("div");
-      itemDiv.className = "flex justify-between items-center";
-      itemDiv.innerHTML = `
-                <div>
-                    <p class="font-semibold text-gray-800">${item.nome}</p>
-                    <p class="text-sm text-gray-500">R$ ${item.preco} x ${item.quantidade}</p>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <span class="font-bold text-gray-800">R$ ${subtotal.toFixed(2)}</span>
-                    <button onclick="removerCarrinho(${item.id})" class="text-red-500 hover:text-red-700">&times;</button>
-                </div>
-            `;
-      cartItemsDiv.appendChild(itemDiv);
-    });
-
-    if (cartTotal) {
-      cartTotal.innerText = `R$ ${valorTotalGeral.toFixed(2)}`;
-    }
-  }
-}
-
-function addCarrinho(produtoID) {
-  const produtoAdd = cardapio.find((i) => i.id === produtoID);
-  const itemExistente = carrinho.find((i) => i.id === produtoID);
-
-  if (itemExistente) {
-    itemExistente.quantidade++;
-  } else {
-    carrinho.push({ ...produtoAdd, quantidade: 1 });
-  }
-  renderizarCarrinho();
-}
-
-function removerCarrinho(produtoID) {
-  const index = carrinho.findIndex((i) => i.id === produtoID);
-  if (index !== -1) {
-    if (carrinho[index].quantidade > 1) {
-      carrinho[index].quantidade--;
-    } else {
-      carrinho.splice(index, 1);
-    }
-  }
-  renderizarCarrinho();
 }
