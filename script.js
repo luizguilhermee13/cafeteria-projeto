@@ -1,6 +1,7 @@
 import { logar } from "./frontend/aplicativo/assets/modules/login.js";
 import * as cardapio from "./frontend/aplicativo/assets/modules/ui.js";
 import * as carrinho from "./frontend/aplicativo/assets/modules/carrinho.js";
+import * as apis from "./frontend/aplicativo/assets/modules/api.js";
 
 const loginForm = document.getElementById("loginForm");
 
@@ -24,3 +25,5 @@ if (document.getElementById("ContainerCards")) {
   cardapio.CardapioPage();
   carrinho.renderizarCarrinho();
 }
+
+apis.buscarImagens();
