@@ -26,4 +26,4 @@ if (document.getElementById("ContainerCards")) {
   carrinho.renderizarCarrinho();
 }
 
-apis.buscarImagens();
+apis.buscarImagens("coffe");

@@ -26,6 +26,7 @@ app.get("/api/unsplash", async (req, res) => {
         query: {
           query: query,
           page: 1,
+          lang: "pt",
           per_page: 10,
         },
       },

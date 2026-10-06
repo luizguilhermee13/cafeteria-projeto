@@ -2,6 +2,29 @@
 export let carrinho = [];
 export let cardapio = [];
 
+export async function buscarImagens(termo) {
+  try {
+    const response = await fetch(`http://localhost:3000/api/unsplash?query=${encodeURIComponent(termo)}`);
+
+    console.log(response);
+    if (!response.ok) {
+      throw new Error("Erro ao buscar imagens");
+    }
+
+    const imagens = await response.json();
+
+    imagens.forEach((element) => {
+      console.log(element);
+    });
+
+    return imagens;
+  } catch (erro) {
+    console.error("Erro:", erro);
+
+    return [];
+  }
+}
+
 export function CardapioPage() {
   cardapio = [
     // Categoria: Café
