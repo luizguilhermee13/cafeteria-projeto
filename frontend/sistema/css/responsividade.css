@@ -1,11 +1,11 @@
-/* responsividade*/
-
 @media (max-width: 575px) {
   /* Main - formatação do container e cards / tela inicial */
   /* Header - formatação do tamanho*/
   header {
     gap: 25px;
-    font: normal 25px/1.2 "Verdana", sans-serif;
+    font:
+      normal 25px/1.2 "Verdana",
+      sans-serif;
     margin: 0 auto 3% auto;
   }
 
@@ -16,7 +16,9 @@
   main .container {
     width: 95%;
     margin: 2% auto;
-    font: normal 10px/1.2 "Verdana", sans-serif;
+    font:
+      normal 10px/1.2 "Verdana",
+      sans-serif;
     padding: 0.2%;
     box-sizing: border-box;
   }
@@ -43,7 +45,9 @@
 
   .card-footer {
     width: 100%;
-    font: normal 20px/1.5 "Verdana", sans-serif;
+    font:
+      normal 20px/1.5 "Verdana",
+      sans-serif;
   }
 
   .card-footer #dificuldate {
@@ -367,7 +371,9 @@
   /* Header - formatação do tamanho*/
   header {
     gap: 30px;
-    font: normal 40px/1.2 "Verdana", sans-serif;
+    font:
+      normal 40px/1.2 "Verdana",
+      sans-serif;
     margin: 0 auto 3% auto;
   }
 
@@ -404,7 +410,9 @@
 
   .card-footer {
     width: 100%;
-    font: normal 20px/1.8 "Verdana", sans-serif;
+    font:
+      normal 20px/1.8 "Verdana",
+      sans-serif;
   }
 
   .card-footer #dificuldate {
@@ -518,7 +526,9 @@
   /* Header - formatação do tamanho*/
   header {
     gap: 45px;
-    font: normal 50px/1.2 "Verdana", sans-serif;
+    font:
+      normal 50px/1.2 "Verdana",
+      sans-serif;
     margin: 0 auto 3% auto;
   }
 
@@ -677,7 +687,9 @@
   /* Header - formatação do tamanho*/
   header {
     gap: 45px;
-    font: normal 55px/1.2 "Verdana", sans-serif;
+    font:
+      normal 55px/1.2 "Verdana",
+      sans-serif;
     margin: 0 auto 2% auto;
   }
 
@@ -835,7 +847,9 @@
   /* Header - formatação do tamanho*/
   header {
     gap: 45px;
-    font: normal 55px/1.2 "Verdana", sans-serif;
+    font:
+      normal 55px/1.2 "Verdana",
+      sans-serif;
     margin: 0 auto 2% auto;
   }
 
