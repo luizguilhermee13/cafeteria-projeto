@@ -1,7 +1,6 @@
 import { logar } from "./frontend/aplicativo/assets/modules/login.js";
 import * as cardapio from "./frontend/aplicativo/assets/modules/ui.js";
 import * as carrinho from "./frontend/aplicativo/assets/modules/carrinho.js";
-import * as apis from "./frontend/aplicativo/assets/modules/api.js";
 
 const loginForm = document.getElementById("loginForm");
 
@@ -22,8 +21,6 @@ window.removerCarrinho = carrinho.removerCarrinho;
 
 // somente executa o cardápio se estiver na página do cardápio
 if (document.getElementById("ContainerCards")) {
-  cardapio.CardapioPage();
+  cardapio.CardapioPage(cardapio.cardapio);
   carrinho.renderizarCarrinho();
 }
-
-apis.buscarImagens("coffe");

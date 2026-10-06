@@ -41,10 +41,9 @@ export function renderizarCarrinho() {
           </span>
 
           <button
-            onclick="removerCarrinho(${item.id})"
-            class="text-red-500 hover:text-red-700"
-          >
-            &times;
+           onclick="removerCarrinho('${item.id}')"
+          class="text-red-500 hover:text-red-700">
+             &times;
           </button>
         </div>
       `;
