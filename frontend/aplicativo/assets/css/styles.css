@@ -57,10 +57,10 @@ nav {
 
 .voltarTitle button {
   margin: 0;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   background-color: white;
   border: none;
-  font-size: large;
+  font-size: x-large;
 }
 
 .voltarTitle button:hover {

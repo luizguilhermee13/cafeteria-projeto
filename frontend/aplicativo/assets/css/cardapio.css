@@ -148,6 +148,7 @@ nav {
   border: 1px solid #2d1f1a5e;
   border-radius: 12px;
   color: #2d1f1a;
+  cursor: pointer;
 }
 
 .ContainerCategorias ul > li:hover {
@@ -247,6 +248,7 @@ p {
   color: white;
   font-size: medium;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 #esconder {
