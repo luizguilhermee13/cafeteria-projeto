@@ -1,6 +1,6 @@
-import { logar } from "./frontend/aplicativo/assets/modules/login.js";
-import * as cardapio from "./frontend/aplicativo/assets/modules/ui.js";
-import * as carrinho from "./frontend/aplicativo/assets/modules/carrinho.js";
+import { logar } from "./frontendJs/aplicativo/assets/modules/login.js";
+import * as cardapio from "./frontendJs/aplicativo/assets/modules/ui.js";
+import * as carrinho from "./frontendJs/aplicativo/assets/modules/carrinho.js";
 
 const loginForm = document.getElementById("loginForm");
 

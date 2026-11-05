@@ -1,0 +1,331 @@
+/* 
+  ========================================
+  Seção de formatações globais da tela do Cardapio
+  ========================================
+*/
+
+nav {
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* 
+  ========================================
+  formatando logo e nome da cafeteria
+  ========================================
+*/
+
+.logoName {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.logoName .icon {
+  width: auto;
+}
+
+.logoName .icon span {
+  background: var(--cor-Button);
+  border-radius: 1em;
+  padding: 4px;
+  color: white;
+  font-size: 34px;
+}
+
+.logoName .textIcon {
+  width: auto;
+  font-size: 8px;
+  margin: 0;
+}
+
+.logoName span {
+  font-size: 14px;
+}
+
+.logoName p {
+  font-size: 10px;
+  margin: 0;
+}
+
+/* 
+  ========================================
+  formatando botoes para outras paginas
+  ========================================
+*/
+
+.iconPages {
+  width: 170px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.iconPages .pagesIcons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.iconPages .pagesIcons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconPages .pagesIcons a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+  background: var(--cor-fundoGeral);
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.iconPages .pagesIcons a:hover {
+  opacity: 0.7;
+  background: var(--cor-alert);
+}
+
+/* 
+  ========================================
+  formatando container pai das telas
+  ========================================
+*/
+
+#containerCardapio {
+  margin: 0;
+  padding: 0 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 
+  ========================================
+  formatando tela Cardapio
+  ========================================
+*/
+
+.ContainerCategorias {
+  padding: 2rem 0;
+}
+
+.ContainerCategorias h2 {
+  margin: 0;
+  font-family: sans-serif;
+  color: #2d1f1a;
+}
+
+.ContainerCategorias ul {
+  margin: 1rem auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-grow: row wrap;
+  gap: 1rem;
+}
+
+.ContainerCategorias ul > li {
+  padding: 0.6rem;
+  border: 1px solid #2d1f1a5e;
+  border-radius: 12px;
+  color: #2d1f1a;
+  cursor: pointer;
+}
+
+.ContainerCategorias ul > li:hover {
+  color: white;
+  opacity: 0.7;
+  background: var(--cor-detalhes);
+}
+
+/* 
+  ========================================
+  formatando tela Cardapio - cards
+  ========================================
+*/
+
+.Cards_Container {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+  gap: 1rem;
+  color: var(--cor-textoPrincipal);
+}
+
+.Cards_Container .Card_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 17.4rem;
+  height: 22rem;
+  background-color: rgb(250, 250, 250);
+  border-radius: 1rem;
+  transition: 0.9s;
+}
+
+.Cards_Container .Card_items:hover {
+  scale: 1.05;
+}
+.Card_items .card_image img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 1rem 1rem 0 0;
+  background-size: cover;
+}
+
+.Card_items .card_description {
+  padding: 0 1rem;
+}
+
+.Card_items .card_description h3,
+p {
+  margin: 0;
+}
+
+.Card_items .card_description h3 {
+  font-family: sans-serif;
+  color: var(--cor-textoPrincipal);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.Card_items .card_description p {
+  color: var(--cor-textoSegundario);
+}
+
+.card_description p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.Card_items .card_footer {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 1rem 1rem;
+  font-family: sans-serif;
+}
+
+.Card_items .card_footer p {
+  color: var(--cor-Button);
+  font-size: larger;
+}
+
+.Card_items .card_footer button {
+  padding: 0.3rem;
+  background-color: var(--cor-Button);
+  color: white;
+  font-size: medium;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#esconder {
+  display: none;
+}
+
+/* 
+  ========================================
+  formatando temporaria do carrinho
+  ========================================
+*/
+
+.cart-container {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
+
+.cart h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.cart-items {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777777;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 16px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+#realizarPedido {
+  width: 100%;
+  background-color: #ffc107;
+  color: #2c2c2c;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+#realizarPedido:hover {
+  background-color: #e0a800;
+}
+
+#realizarPedido:active {
+  transform: scale(0.98);
+}
