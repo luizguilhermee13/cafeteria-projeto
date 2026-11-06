@@ -6,7 +6,10 @@ function Carrinho() {
   return (
     <div className="bg-[#faf8f5] w-full h-screen">
       <Header>
-        <Link to="/cardapio" className="flex items-center gap-3 text-stone-800 font-medium hover:opacity-80 transition text-2xl">
+        <Link
+          to="/cardapio"
+          className="flex items-center gap-3 text-stone-800 font-medium hover:opacity-80 transition text-2xl py-4 px-6  "
+        >
           <MdArrowBack />
           <span>Carrinho</span>
         </Link>
