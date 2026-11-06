@@ -4,9 +4,12 @@
     "dev": "node backend/server.js"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.4",
     "cors": "^2.8.6",
     "dotenv": "^18.0.5",
     "express": "^5.2.1",
+    "react-router-dom": "^7.18.5",
+    "tailwindcss": "^4.3.4",
     "unsplash-js": "^8.0.1"
   }
 }
