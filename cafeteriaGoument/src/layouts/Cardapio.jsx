@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import Header from "../components/Header.jsx";
+import NavBar from "../components/NavBar.jsx";
 
 function Cardapio() {
   return (
-    <div>
-      <h1>Estou na tela do Cardapio</h1>
-      <Link to={"/"}> Entrar em Login </Link>
+    <div className="bg-[#faf8f5] w-full h-screen">
+      <Header>
+        <NavBar />
+      </Header>
+      <div>conteudo cardapio</div>
     </div>
   );
 }
