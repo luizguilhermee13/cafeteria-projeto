@@ -5,7 +5,7 @@ function Login() {
   return (
     <div className="bg-[#faf8f5] w-full h-screen flex justify-center items-center flex-col gap-4">
       <form id="loginForm" className="bg-white grid p-8 rounded-3xl shadow-xl w-105">
-        {/* Cabeçalho do Card */}
+        {/* Cabeçalho do Formulário / icone */}
         <div className="card_header pb-6 flex flex-col items-center gap-2">
           <div className="bg-[#6b4423] p-3.5 rounded-full text-white shadow-md">
             <MdLocalCafe className="text-4xl" />
@@ -43,7 +43,7 @@ function Login() {
           />
         </div>
 
-        {/* Rodapé / Botão de Ação */}
+        {/* Rodapé do Formulário  / Botão de Ação */}
         <div className="card_footer flex flex-col items-center w-full gap-4 pt-6">
           <Link
             to="/cardapio"
