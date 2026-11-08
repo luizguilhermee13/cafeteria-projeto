@@ -1,5 +1,6 @@
 import Header from "../components/Header.jsx";
 import NavBar from "../components/NavBar.jsx";
+import Cards from "../components/Cards.jsx";
 
 function Cardapio() {
   return (
@@ -7,8 +8,8 @@ function Cardapio() {
       <Header>
         <NavBar />
       </Header>
-      <main id="containerCardapio" className="px-4 min-h-screen box-content">
-        <div className="ContainerCategorias py-8 flex flex-col gap-2 ">
+      <main id="containerCardapio" className="px-4 min-h-screen box-content bg-[#f5f1ed] pb-4">
+        <div className="ContainerCategorias py-6 flex flex-col gap-2 ">
           <h2 className="font-serif text-2xl font-semibold text-[#2d1f1a] ">Nosso Cardápio</h2>
 
           <ul id="category" className="my-4 mx-auto list-none flex gap-4">
@@ -26,7 +27,9 @@ function Cardapio() {
             </li>
           </ul>
         </div>
-        <div className="Cards_Container" id="ContainerCards"></div>
+        <div className="Cards_Container" id="ContainerCards ">
+          <Cards />
+        </div>
 
         <div className="cart-container w-full max-w-105 bg-white rounded-xl p-6 box-content font-serif mt-4  ">
           <div className="cart">
