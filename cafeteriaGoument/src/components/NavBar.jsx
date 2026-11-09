@@ -4,14 +4,20 @@ import { MdInfo, MdHistory, MdShoppingCart, MdExitToApp, MdLocalCafe } from "rea
 function NavBar() {
   return (
     <>
-      <div className="logoName flex items-center justify-center gap-2 w-56 h-16">
-        <div className="w-auto rounded-2xl p-1 text-4xl bg-[#2d1f1a] text-white">
+      <div className="logoName flex items-center justify-start gap-3 w-full max-w-xs sm:max-w-none h-16">
+        {/* Ícone */}
+        <div className="shrink-0 rounded-2xl p-2 text-3xl sm:text-4xl bg-[#2d1f1a] text-white flex items-center justify-center">
           <MdLocalCafe />
         </div>
 
-        <div className="">
-          <h2 className="text-[#2d1f1a] font-normal  font-serif text-2xl">Café Gourmet</h2>
-          <span className="text-[#8b7a6f]">Delivery de experiências</span>
+        {/* Textos */}
+        <div className="flex flex-col min-w-0">
+          <h2 className="text-[#2d1f1a] font-normal font-serif text-xl sm:text-2xl whitespace-nowrap overflow-hidden text-ellipsis">
+            Café Gourmet
+          </h2>
+          <span className="text-[#8b7a6f] text-xs sm:text-sm whitespace-nowrap overflow-hidden text-ellipsis">
+            Delivery de experiências
+          </span>
         </div>
       </div>
       <nav className="w-44 h-12 p-0 m-0">

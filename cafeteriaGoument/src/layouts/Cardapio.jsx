@@ -4,15 +4,16 @@ import Cards from "../components/Cards.jsx";
 
 function Cardapio() {
   return (
-    <div className="bg-[#faf8f5] w-full h-screen">
+    <div className="bg-[#faf8f5] w-full min-h-screen">
       <Header>
         <NavBar />
       </Header>
-      <main id="containerCardapio" className="px-4 min-h-screen box-content bg-[#f5f1ed] pb-4">
+
+      <main id="containerCardapio" className="px-4 min-h-screen box-border bg-[#f5f1ed] pb-8 w-full">
         <div className="ContainerCategorias py-6 flex flex-col gap-2 ">
           <h2 className="font-serif text-2xl font-semibold text-[#2d1f1a] ">Nosso Cardápio</h2>
 
-          <ul id="category" className="my-4 mx-auto list-none flex gap-4">
+          <ul id="category" className="my-4 mx-auto list-none flex gap-2 sm:gap-4 flex-wrap justify-center">
             <li className="p-[0.6rem] border border-[#2d1f1a5e] rounded-xl text-[#2d1f1a] cursor-pointer hover:text-white hover:opacity-70 hover:bg-[#6b4423] transition-colors">
               Todos
             </li>
@@ -27,11 +28,12 @@ function Cardapio() {
             </li>
           </ul>
         </div>
-        <div className="Cards_Container" id="ContainerCards ">
+
+        <div className="Cards_Container w-full" id="ContainerCards">
           <Cards />
         </div>
 
-        <div className="cart-container w-full max-w-105 bg-white rounded-xl p-6 box-content font-serif mt-4  ">
+        <div className="cart-container w-full max-w-md bg-white rounded-xl p-6 box-border font-serif mt-6 mx-auto">
           <div className="cart">
             <h2 className=" text-2xl font-bold text-[#2c2c2c] mb-4 border-b-2 border-[#f0f0f0] pb-1">Seu Pedido</h2>
             <div className="cart-items min-h-20 flex items-center justify-center text-[#777777] text-xs mb-5 text-center" id="cart-items">

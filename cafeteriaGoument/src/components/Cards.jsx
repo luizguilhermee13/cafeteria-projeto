@@ -74,22 +74,24 @@ function Cards() {
   ];
 
   return (
-    <div className="Cards_Container  grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] place-items-center gap-4 text-[#2d1f1a] pb-4">
+    <div className="Cards_Container grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] place-items-center gap-4 text-[#2d1f1a] pb-4 w-full">
       {cardapio.map((item, id) => (
         <div
           key={id}
-          className="Card_items flex flex-col justify-between w-[17.4rem] h-88 bg-white rounded-2xl transition-transform duration-[900] hover:scale-105 py-2 "
+          className="Card_items flex flex-col justify-between w-full max-w-[17.4rem] h-88 bg-white rounded-2xl transition-transform duration-300 hover:scale-105 py-2"
         >
-          <div className="">
-            <img src={item.imagem} alt="img" className="card_image w-full h-48 bg-cover rounded-t-2xl" />
+          <div>
+            <img src={item.imagem} alt={item.nome} className="card_image w-full h-48 object-cover rounded-t-2xl" />
           </div>
           <div className="card_description px-4">
-            <h3 className="font-sans text-[#2d1f1a] line-clamp-2 overflow-hidden mb-2">{item.nome}</h3>
-            <p className="text-[#8b7a6f] line-clamp-2 overflow-hidden mb-2">{item.descricao}</p>
+            <h3 className="font-sans text-[#2d1f1a] font-semibold line-clamp-2 overflow-hidden mb-2">{item.nome}</h3>
+            <p className="text-[#8b7a6f] text-sm line-clamp-2 overflow-hidden mb-2">{item.descricao}</p>
           </div>
           <div className="card_footer mb-4 px-4 flex justify-between items-center font-serif rounded-b-2xl">
-            <p className="text-[#6b4423] text-lg">R$ {item.preco}</p>
-            <button className="p-1 bg-[#6b4423] text-white text-base rounded-[5em] cursor-pointer">+ Adicionar</button>
+            <p className="text-[#6b4423] text-lg font-bold">R$ {item.preco.toFixed(2)}</p>
+            <button className="py-1 px-3 bg-[#6b4423] text-white text-sm rounded-full cursor-pointer hover:bg-[#52331a] transition-colors">
+              + Adicionar
+            </button>
           </div>
         </div>
       ))}
