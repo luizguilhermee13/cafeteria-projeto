@@ -4,18 +4,21 @@ Sistema web de cafeteria desenvolvido originalmente como **Trabalho de Conclusã
 
 O projeto foi idealizado para representar duas áreas de uma cafeteria: uma interface para os clientes realizarem seus pedidos e um sistema interno para auxiliar os funcionários no acompanhamento das operações.
 
-🌐 **Projeto online:**  
+🌐 **Projeto online (Vercel):**  
+https://cafeteria-projeto-psi.vercel.app/
+
+🌐 **Versão estática anterior (GitHub Pages):**  
 https://luizguilhermee13.github.io/cafeteria-projeto/
 
 ---
 
 ## 📌 Status do Projeto
 
-🟡 **Em reestruturação**
+🔄 **Em processo de migração para React (SPA)**
 
-Atualmente estou retomando o projeto para melhorar sua interface, organização do código, responsividade e funcionalidades.
+Atualmente, o projeto está passando por uma grande refatoração. O código legado em HTML/CSS puro está sendo totalmente convertido para uma aplicação moderna baseada em componentes utilizando **React, Vite, React Router** e estilizada com **Tailwind CSS**.
 
-O objetivo desta nova etapa é aplicar os conhecimentos que adquiri após a criação da versão original do projeto.
+O objetivo desta nova etapa é modernizar a arquitetura, melhorar a performance, a responsividade e aplicar boas práticas de desenvolvimento front-end.
 
 ---
 
@@ -27,58 +30,52 @@ O Café Gourmet foi dividido em duas áreas principais:
 
 Interface destinada ao cliente, contendo páginas para:
 
-- Visualização do cardápio
-- Carrinho de compras
+- Visualização do cardápio responsivo
+- Carrinho de compras interativo
 - Histórico de pedidos
-- Informações sobre a cafeteria
+- Informações sobre a cafeteria e loja física
 
-### 💼 Sistema Interno
+## 🛠️ Evolução e Reestruturação Atual
 
-Área criada para representar o ambiente utilizado pelos funcionários da cafeteria, contendo funcionalidades e telas relacionadas a:
+Principais melhorias aplicadas nesta nova versão:
 
-- Atendimento de pedidos
-- Preparação de pedidos
-- Controle de estoque
-- Controle de vendas
-- Solicitação de entregador
-- Sistema de pontos
-
----
-
-## 🛠️ Reestruturação Atual
-
-Entre as melhorias planejadas e em desenvolvimento estão:
-
-- 🎨 Reformulação do layout
-- 🛒 Implementação e melhoria da lógica do carrinho
-- ♻️ Refatoração e organização do código
-- 📱 Melhorias de responsividade
-- ⚙️ Evolução das funcionalidades do sistema
+- ⚛️ **Migração para SPA** com React e roteamento dinâmico via `react-router-dom`.
+- 🎨 **Estilização moderna** com utilitários do **Tailwind CSS v4**.
+- ♻️ **Refatoração completa do código**, saindo de múltiplos arquivos HTML isolados para uma arquitetura modular baseada em componentes reutilizáveis.
+- 📱 **Responsividade aprimorada** para diversos tamanhos de tela.
+- 🚀 **Deploy otimizado** na Vercel com suporte a rotas de Single Page Application.
 
 ---
 
-## 💻 Tecnologias
+## 💻 Tecnologias Utilizadas (Stack Atual)
 
-- **HTML5** — estrutura das páginas
-- **CSS3** — estilização e responsividade
-- **JavaScript** — interações e manipulação do DOM
-- **SQL** — modelagem inicial do banco de dados
-- **Git / GitHub** — versionamento do projeto
-- **GitHub Pages** — publicação da aplicação
+- **React** — Biblioteca para construção de interfaces baseadas em componentes
+- **Vite** — Ferramenta de build rápida e moderna
+- **Tailwind CSS** — Framework CSS utilitário para estilização ágil e responsiva
+- **React Router** — Gerenciamento de rotas e navegação SPA
+- **React Icons** — Biblioteca de ícones padronizados
+- **Git / GitHub** — Versionamento de código
+- **Vercel** — Plataforma de hospedagem e CI/CD
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto (Atualizada)
 
 ```text
 cafeteria-projeto/
 │
-├── frontend/
-│   ├── aplicativo/    # Área do cliente
-│   └── sistema/       # Área interna da cafeteria
+├── cafeteriaGoument/         # Diretório principal da aplicação React
+│   ├── public/               # Arquivos públicos e assets estáticos
+│   ├── src/
+│   │   ├── assets/           # Imagens e recursos visuais
+│   │   ├── components/       # Componentes reaproveitáveis (Header, Cards, etc.)
+│   │   ├── layouts/          # Páginas principais (Cardápio, Carrinho, Login, Sobre)
+│   │   ├── routes/           # Configuração de rotas da aplicação
+│   │   ├── styles/           # Arquivos de estilo global e Tailwind
+│   │   ├── App.jsx           # Componente raiz
+│   │   └── main.jsx          # Ponto de entrada da aplicação
+│   ├── package.json          # Dependências e scripts do projeto
+│   └── vercel.json           # Configurações de redirecionamento para SPA na Vercel
 │
-├── bancodados/        # Modelagem do banco de dados
-│
-├── index.html
 └── README.md
 ```
