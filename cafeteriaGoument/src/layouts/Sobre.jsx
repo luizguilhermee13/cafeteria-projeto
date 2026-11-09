@@ -21,7 +21,7 @@ function Sobre() {
 
         <div className="containerCards">
           <div className="cardHistory h-auto flex flex-col flex-wrap justify-evenly gap-4 bg-white p-8 rounded-2xl">
-            <h4 className="text-lg">Nossa História</h4>
+            <h4 className="text-xl text-[#2d1f1a] font-semibold">Nossa História</h4>
             <p className="text-justify text-lg text-[#8b7a6f]">
               Fundado em 2015, o Café Gourmet nasceu do sonho de levar experiências autênticas de café para São Paulo. Combinamos grãos
               selecionados de fazendas brasileiras com técnicas artesanais europeias.
@@ -35,7 +35,7 @@ function Sobre() {
 
         <div className="containerCards">
           <div className="cardContact h-auto flex flex-col flex-wrap gap-4 bg-white p-4 rounded-2xl">
-            <h4>Entre em Contato</h4>
+            <h4 className="text-xl text-[#2d1f1a] font-semibold">Entre em Contato</h4>
             <div className="cardBody h-auto flex  flex-wrap bg-[#f0ebe6] p-4 gap-4 rounded-2xl">
               <div className="icon pt-1">
                 <MdLocationOn className="w-full text-[2.5em] text-center bg-[#6b4423] text-white rounded-3xl p-2" />
