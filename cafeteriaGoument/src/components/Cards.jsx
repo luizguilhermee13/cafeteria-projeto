@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-function Cards() {
+function Cards({ topicoSelecionado }) {
   const cardapio = [
     // Categoria: Café
     {
@@ -73,9 +71,11 @@ function Cards() {
     },
   ];
 
+  const produtosFiltrados = topicoSelecionado === "Todos" ? cardapio : cardapio.filter((item) => item.categoria === topicoSelecionado);
+
   return (
     <div className="Cards_Container grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] place-items-center gap-4 text-[#2d1f1a] pb-4 w-full">
-      {cardapio.map((item, id) => (
+      {produtosFiltrados.map((item, id) => (
         <div
           key={id}
           className="Card_items flex flex-col justify-between w-full max-w-[17.4rem] h-88 bg-white rounded-2xl transition-transform duration-300 hover:scale-105 py-2"

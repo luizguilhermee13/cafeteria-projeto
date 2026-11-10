@@ -1,8 +1,12 @@
+import { useState } from "react";
+
 import Header from "../components/Header.jsx";
 import NavBar from "../components/NavBar.jsx";
 import Cards from "../components/Cards.jsx";
 
 function Cardapio() {
+  const [topicoClicado, setTopicoClicado] = useState("Todos");
+
   return (
     <div className="bg-[#faf8f5] w-full min-h-screen">
       <Header>
@@ -13,24 +17,36 @@ function Cardapio() {
         <div className="ContainerCategorias py-6 flex flex-col gap-2 ">
           <h2 className="font-serif text-2xl font-semibold text-[#2d1f1a] ">Nosso Cardápio</h2>
 
-          <ul id="category" className="my-4 mx-auto list-none flex gap-2 sm:gap-4 flex-wrap justify-center">
-            <li className="p-[0.6rem] border border-[#2d1f1a5e] rounded-xl text-[#2d1f1a] cursor-pointer hover:text-white hover:opacity-70 hover:bg-[#6b4423] transition-colors">
+          <ul id="category" className="my-4 mx-auto list-none flex gap-2 sm:gap-4 flex-wrap justify-start">
+            <li
+              onClick={(e) => setTopicoClicado(e.currentTarget.innerText)}
+              className="p-[0.6rem] border border-[#2d1f1a5e] rounded-xl text-[#2d1f1a] cursor-pointer hover:text-white hover:opacity-70 hover:bg-[#6b4423] transition-colors"
+            >
               Todos
             </li>
-            <li className="p-[0.6rem] border border-[#2d1f1a5e] rounded-xl text-[#2d1f1a] cursor-pointer hover:text-white hover:opacity-70 hover:bg-[#6b4423] transition-colors">
+            <li
+              onClick={(e) => setTopicoClicado(e.currentTarget.innerText)}
+              className="p-[0.6rem] border border-[#2d1f1a5e] rounded-xl text-[#2d1f1a] cursor-pointer hover:text-white hover:opacity-70 hover:bg-[#6b4423] transition-colors"
+            >
               Café
             </li>
-            <li className="p-[0.6rem] border border-[#2d1f1a5e] rounded-xl text-[#2d1f1a] cursor-pointer hover:text-white hover:opacity-70 hover:bg-[#6b4423] transition-colors">
+            <li
+              onClick={(e) => setTopicoClicado(e.currentTarget.innerText)}
+              className="p-[0.6rem] border border-[#2d1f1a5e] rounded-xl text-[#2d1f1a] cursor-pointer hover:text-white hover:opacity-70 hover:bg-[#6b4423] transition-colors"
+            >
               Padaria
             </li>
-            <li className="p-[0.6rem] border border-[#2d1f1a5e] rounded-xl text-[#2d1f1a] cursor-pointer hover:text-white hover:opacity-70 hover:bg-[#6b4423] transition-colors">
+            <li
+              onClick={(e) => setTopicoClicado(e.currentTarget.innerText)}
+              className="p-[0.6rem] border border-[#2d1f1a5e] rounded-xl text-[#2d1f1a] cursor-pointer hover:text-white hover:opacity-70 hover:bg-[#6b4423] transition-colors"
+            >
               Doces
             </li>
           </ul>
         </div>
 
         <div className="Cards_Container w-full" id="ContainerCards">
-          <Cards />
+          {<Cards topicoSelecionado={topicoClicado} />}
         </div>
 
         <div className="cart-container w-full max-w-md bg-white rounded-xl p-6 box-border font-serif mt-6 mx-auto">
