@@ -24,11 +24,9 @@ function Carrinho() {
 
             <p className="m-0 text-base text-[#8b7a6f]">Adicione produtos deliciosos do nosso cardápio</p>
 
-            <button className="p-[0.6rem] bg-[#6b4423] text-white text-base rounded-lg border-none cursor-pointer hover:opacity-90 transition">
-              <Link to="/cardapio" className="no-underline text-white">
-                Voltar ao Cardápio
-              </Link>
-            </button>
+            <Link to="/cardapio" className="btn-principal no-underline inline-block">
+              Voltar ao Cardápio
+            </Link>
           </div>
         </div>
       </main>

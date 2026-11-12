@@ -1,6 +1,7 @@
 import Header from "../components/Header.jsx";
 import { Link } from "react-router-dom";
 import { MdArrowBack, MdLocationOn, MdPhone, MdEmail, MdAccessTime } from "react-icons/md";
+
 function Sobre() {
   return (
     <div className="bg-[#faf8f5] w-full h-screen">
@@ -20,7 +21,7 @@ function Sobre() {
         </div>
 
         <div className="containerCards">
-          <div className="cardHistory h-auto flex flex-col flex-wrap justify-evenly gap-4 bg-white p-8 rounded-2xl">
+          <div className="cardHistory h-auto flex flex-col flex-wrap justify-evenly gap-4 card-padrao">
             <h4 className="text-xl text-[#2d1f1a] font-semibold">Nossa História</h4>
             <p className="text-justify text-lg text-[#8b7a6f]">
               Fundado em 2015, o Café Gourmet nasceu do sonho de levar experiências autênticas de café para São Paulo. Combinamos grãos
@@ -34,9 +35,10 @@ function Sobre() {
         </div>
 
         <div className="containerCards">
-          <div className="cardContact h-auto flex flex-col flex-wrap gap-4 bg-white p-4 rounded-2xl">
+          <div className="cardContact h-auto flex flex-col flex-wrap gap-4 card-padrao">
             <h4 className="text-xl text-[#2d1f1a] font-semibold">Entre em Contato</h4>
-            <div className="cardBody h-auto flex  flex-wrap bg-[#f0ebe6] p-4 gap-4 rounded-2xl">
+
+            <div className="bloco-contato">
               <div className="icon pt-1">
                 <MdLocationOn className="w-full text-[2.5em] text-center bg-[#6b4423] text-white rounded-3xl p-2" />
               </div>
@@ -50,7 +52,7 @@ function Sobre() {
               </ol>
             </div>
 
-            <div className="cardBody h-auto flex  flex-wrap bg-[#f0ebe6] p-4 gap-4 rounded-2xl">
+            <div className="bloco-contato">
               <div className="icon pt-1">
                 <MdPhone className="w-full text-[2.5em] text-center bg-[#6b4423] text-white rounded-3xl p-2" />
               </div>
@@ -63,7 +65,7 @@ function Sobre() {
               </ol>
             </div>
 
-            <div className="cardBody h-auto flex  flex-wrap bg-[#f0ebe6] p-4 gap-4 rounded-2xl">
+            <div className="bloco-contato">
               <div className="icon pt-1">
                 <MdEmail className="w-full text-[2.5em] text-center bg-[#6b4423] text-white rounded-3xl p-2" />
               </div>
@@ -76,7 +78,7 @@ function Sobre() {
               </ol>
             </div>
 
-            <div className="cardBody h-auto flex  flex-wrap bg-[#f0ebe6] p-4 gap-4 rounded-2xl">
+            <div className="bloco-contato">
               <div className="icon pt-1">
                 <MdAccessTime className="w-full text-[2.5em] text-center bg-[#6b4423] text-white rounded-3xl p-2" />
               </div>
@@ -93,12 +95,12 @@ function Sobre() {
         </div>
 
         <div className="containerCards">
-          <div className="cardRSocial h-auto flex flex-col flex-wrap gap-6 bg-white p-8 rounded-2xl">
+          <div className="cardRSocial h-auto flex flex-col flex-wrap gap-6 card-padrao">
             <h4 className="m-0 text-xl text-[#2d1f1a] font-semibold">Redes Sociais</h4>
             <div className="cardButtons grid grid-cols-2 gap-4 text-center">
               <div>
                 <button className="w-full p-[0.8rem] bg-[#f5f1ed] border-none rounded-[0.8rem] text-base font-semibold hover:bg-[#d4a57480] transition-colors cursor-pointer">
-                  Instragram
+                  Instagram
                 </button>
               </div>
               <div>
@@ -111,7 +113,7 @@ function Sobre() {
         </div>
 
         <div className="containerCards">
-          <div className="flex flex-col gap-[1.4rem] text-center h-auto bg-white p-8 rounded-2xl">
+          <div className="flex flex-col gap-[1.4rem] text-center h-auto card-padrao">
             <h4 className="text-xl text-[#2d1f1a] font-semibold">Nossa Loja Física</h4>
 
             <div className="w-full h-56 bg-[url('https://images.unsplash.com/photo-1768812141741-4ee1bf3d9095?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080')] bg-cover bg-center text-white text-left content-end relative rounded-2xl">

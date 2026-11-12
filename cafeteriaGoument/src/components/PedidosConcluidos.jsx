@@ -65,7 +65,7 @@ function PedidosConcluidos() {
   return (
     <div className="w-full max-w-3xl flex flex-col gap-6 font-serif">
       {pedidosFicticios.map((pedido) => (
-        <div key={pedido.id} className="bg-white rounded-2xl shadow-sm border border-stone-200/60 p-6">
+        <div key={pedido.id} className="card-padrao">
           <div className="flex justify-between items-start border-b border-stone-100 pb-4 mb-4">
             <div>
               <h3 className="text-xl font-bold text-[#2c2c2c]">Pedido #{pedido.id}</h3>

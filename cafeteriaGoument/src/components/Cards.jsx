@@ -78,7 +78,7 @@ function Cards({ topicoSelecionado }) {
       {produtosFiltrados.map((item, id) => (
         <div
           key={id}
-          className="Card_items flex flex-col justify-between w-full max-w-[17.4rem] h-88 bg-white rounded-2xl transition-transform duration-300 hover:scale-105 py-2"
+          className="Card_items flex flex-col justify-between w-full max-w-[17.4rem] h-88 card-padrao !p-0 transition-transform duration-300 hover:scale-105 overflow-hidden"
         >
           <div>
             <img src={item.imagem} alt={item.nome} className="card_image w-full h-48 object-cover rounded-t-2xl" />

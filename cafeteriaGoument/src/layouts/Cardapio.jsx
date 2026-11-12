@@ -6,7 +6,6 @@ import Cards from "../components/Cards.jsx";
 function Cardapio() {
   const [topicoClicado, setTopicoClicado] = useState("Todos");
 
-  // Por enquanto, simulamos um carrinho vazio para o layout visual
   const itensCarrinho = [];
 
   return (
@@ -43,7 +42,7 @@ function Cardapio() {
         </div>
 
         {/* Resumo do Pedido / Carrinho Rápido na tela de Cardápio */}
-        <div className="cart-container w-full max-w-md bg-white rounded-xl p-6 box-border font-serif mt-6 mx-auto shadow-sm">
+        <div className="card-padrao w-full max-w-md font-serif mt-6 mx-auto">
           <div className="cart">
             <h2 className="text-2xl font-bold text-[#2c2c2c] mb-4 border-b-2 border-[#f0f0f0] pb-1">Seu Pedido</h2>
 

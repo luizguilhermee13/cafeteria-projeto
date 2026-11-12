@@ -20,7 +20,7 @@ function Login() {
             E-mail
           </label>
           <input
-            className="h-11 text-stone-800 text-base rounded-xl border border-[#e6dfd5] bg-[#fcf9f5] py-1 px-4 outline-none transition-all duration-100 focus:border-[#6b4423] focus:ring-1 focus:ring-[#6b4423]"
+            className="input-padrao"
             type="email"
             name="email"
             id="email"
@@ -33,7 +33,7 @@ function Login() {
             Senha
           </label>
           <input
-            className="h-11 text-stone-800 text-base rounded-xl border border-[#e6dfd5] bg-[#fcf9f5] py-1 px-4 outline-none transition-all duration-100 focus:border-[#6b4423] focus:ring-1 focus:ring-[#6b4423]"
+            className="input-padrao"
             type="password"
             name="senha"
             id="senha"
@@ -45,10 +45,7 @@ function Login() {
 
         {/* Rodapé do Formulário  / Botão de Ação */}
         <div className="card_footer flex flex-col items-center w-full gap-4 pt-6">
-          <Link
-            to="/cardapio"
-            className="w-full text-center text-white bg-[#6b4423] hover:bg-[#5a381c] transition rounded-xl text-base font-medium py-3 shadow-md"
-          >
+          <Link to="/cardapio" className="btn-principal">
             Entrar
           </Link>
           <p className="text-xs text-[#8b7a6f] cursor-pointer hover:underline">Não tem uma conta? Cadastre-se</p>
