@@ -87,7 +87,7 @@ function Cards({ topicoSelecionado }) {
             <h3 className="font-sans text-[#2d1f1a] font-semibold line-clamp-2 overflow-hidden mb-2">{item.nome}</h3>
             <p className="text-[#8b7a6f] text-sm line-clamp-2 overflow-hidden mb-2">{item.descricao}</p>
           </div>
-          <div className="card_footer mb-4 px-4 flex justify-between items-center font-serif rounded-b-2xl">
+          <div className="card_footer mb-4 pb-3 px-4 flex justify-between items-center font-serif rounded-b-2xl">
             <p className="text-[#6b4423] text-lg font-bold">R$ {item.preco.toFixed(2)}</p>
             <button className="py-1 px-3 bg-[#6b4423] text-white text-sm rounded-full cursor-pointer hover:bg-[#52331a] transition-colors">
               + Adicionar
